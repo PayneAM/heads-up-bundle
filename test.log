@@ -1,0 +1,92 @@
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = Challenges Team / RandomBot (http://localhost:5008)
+agent2 = TotallyAwesomeDatathonParticipant / EquityPriceBot (http://localhost:5009)
+
+Duplicate match: 200 deals (400 hands), seed 7
+agent1: -8.135 bb/deal  (std 22.29, stderr 1.576)
+Confidence interval (z=1.96): [-11.224, -5.046] bb/deal
+Reason: interval [-11.224, -5.046] is entirely below 0
+half1: agent1 -1473 chips, agent2 +1473 chips
+half2: agent1 -1781 chips, agent2 +1781 chips
+Faults:
+  agent1 half1: thinking 0.29s of 8s (wall 0.89s), calls 598, errors 0
+  agent1 half2: thinking 0.31s of 8s (wall 0.89s), calls 584, errors 0
+  agent2 half1: thinking 4.27s of 8s (wall 4.90s), calls 625, errors 0
+  agent2 half2: thinking 4.24s of 8s (wall 4.84s), calls 599, errors 0
+Speed: 400 hands in 11.84s (34 hands/s)
+
+============================================================
+  VERDICT: AGENT2 WINS  (TotallyAwesomeDatathonParticipant / EquityPriceBot (http://localhost:5009))
+  Points: agent1 0, agent2 1
+============================================================
+RESULT: AGENT2_WIN
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = Challenges Team / AlwaysPot (http://localhost:5008)
+agent2 = TotallyAwesomeDatathonParticipant / EquityPriceBot (http://localhost:5009)
+
+Duplicate match: 200 deals (400 hands), seed 7
+agent1: -4.683 bb/deal  (std 24.88, stderr 1.759)
+Confidence interval (z=1.96): [-8.131, -1.234] bb/deal
+Reason: interval [-8.131, -1.234] is entirely below 0
+half1: agent1 -378 chips, agent2 +378 chips
+half2: agent1 -1495 chips, agent2 +1495 chips
+Faults:
+  agent1 half1: thinking 0.22s of 8s (wall 0.78s), calls 561, errors 0
+  agent1 half2: thinking 0.20s of 8s (wall 0.76s), calls 562, errors 0
+  agent2 half1: thinking 4.31s of 8s (wall 5.02s), calls 713, errors 0
+  agent2 half2: thinking 4.26s of 8s (wall 4.98s), calls 716, errors 0
+Speed: 400 hands in 11.86s (34 hands/s)
+
+============================================================
+  VERDICT: AGENT2 WINS  (TotallyAwesomeDatathonParticipant / EquityPriceBot (http://localhost:5009))
+  Points: agent1 0, agent2 1
+============================================================
+RESULT: AGENT2_WIN
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = Challenges Team / CallingStation (http://localhost:5008)
+agent2 = TotallyAwesomeDatathonParticipant / EquityPriceBot (http://localhost:5009)
+
+Duplicate match: 200 deals (400 hands), seed 7
+agent1: -10.162 bb/deal  (std 15.81, stderr 1.118)
+Confidence interval (z=1.96): [-12.354, -7.971] bb/deal
+Reason: interval [-12.354, -7.971] is entirely below 0
+half1: agent1 -1890 chips, agent2 +1890 chips
+half2: agent1 -2175 chips, agent2 +2175 chips
+Faults:
+  agent1 half1: thinking 0.35s of 8s (wall 1.31s), calls 959, errors 0
+  agent1 half2: thinking 0.34s of 8s (wall 1.29s), calls 947, errors 0
+  agent2 half1: thinking 4.33s of 8s (wall 5.13s), calls 802, errors 0
+  agent2 half2: thinking 4.31s of 8s (wall 5.11s), calls 799, errors 0
+Speed: 400 hands in 13.28s (30 hands/s)
+
+============================================================
+  VERDICT: AGENT2 WINS  (TotallyAwesomeDatathonParticipant / EquityPriceBot (http://localhost:5009))
+  Points: agent1 0, agent2 1
+============================================================
+RESULT: AGENT2_WIN
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = Challenges Team / AlwaysHalf (http://localhost:5008)
+agent2 = TotallyAwesomeDatathonParticipant / EquityPriceBot (http://localhost:5009)
+
+Duplicate match: 200 deals (400 hands), seed 7
+agent1: -8.010 bb/deal  (std 21.89, stderr 1.548)
+Confidence interval (z=1.96): [-11.043, -4.977] bb/deal
+Reason: interval [-11.043, -4.977] is entirely below 0
+half1: agent1 -1086 chips, agent2 +1086 chips
+half2: agent1 -2118 chips, agent2 +2118 chips
+Faults:
+  agent1 half1: thinking 0.25s of 8s (wall 0.97s), calls 724, errors 0
+  agent1 half2: thinking 0.29s of 8s (wall 1.03s), calls 741, errors 0
+  agent2 half1: thinking 4.37s of 8s (wall 5.29s), calls 916, errors 0
+  agent2 half2: thinking 4.43s of 8s (wall 5.37s), calls 940, errors 0
+Speed: 400 hands in 13.07s (31 hands/s)
+
+============================================================
+  VERDICT: AGENT2 WINS  (TotallyAwesomeDatathonParticipant / EquityPriceBot (http://localhost:5009))
+  Points: agent1 0, agent2 1
+============================================================
+RESULT: AGENT2_WIN
