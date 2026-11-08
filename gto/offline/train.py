@@ -38,8 +38,10 @@ DATA = os.path.join(os.path.dirname(HERE), "data")
 KS = B.KS
 
 ARCHETYPES = ["station", "maniac", "nit", "random", "half", "pot", "honest"]
-P_LOCK = {"station": 0.7, "maniac": 0.7, "nit": 0.7, "random": 0.8,
-          "half": 0.8, "pot": 0.8, "honest": 0.6}
+# How much each counter-strategy assumes the opponent IS the archetype. Lower =
+# less exploitative but much harder to counter-exploit (v2.1: all 0.5; was 0.6-0.8).
+P_LOCK = {"station": 0.5, "maniac": 0.5, "nit": 0.5, "random": 0.5,
+          "half": 0.5, "pot": 0.5, "honest": 0.5}
 
 
 def flatten(tree: Tree):

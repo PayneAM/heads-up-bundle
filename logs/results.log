@@ -1,20 +1,181 @@
 waiting for agent1 at http://localhost:5008 ...
 waiting for agent2 at http://localhost:5009 ...
-agent1 = ChrisC / GTOExploit-v2 (http://localhost:5008)
-agent2 = Fish Dragon / bot_base_optim (http://localhost:5009)
+agent1 = Challenges Team / RandomBot (http://localhost:5008)
+agent2 = Fish Dragon / bot_optim_cache (http://localhost:5009)
 
-Duplicate match: 2500 deals (5000 hands), seed 7
-agent1: +0.237 bb/deal  (std 14.70, stderr 0.294)
-Confidence interval (z=1.96): [-0.339, +0.813] bb/deal
-Reason: interval [-0.339, +0.813] includes 0
-half1: agent1 +3727 chips, agent2 -3727 chips
-half2: agent1 -2543 chips, agent2 +2543 chips
+Duplicate match: 100 deals (200 hands), seed 7
+agent1: -8.210 bb/deal  (std 22.16, stderr 2.216)
+Confidence interval (z=1.96): [-12.554, -3.866] bb/deal
+Reason: interval [-12.554, -3.866] is entirely below 0
+half1: agent1 -482 chips, agent2 +482 chips
+half2: agent1 -1160 chips, agent2 +1160 chips
 Faults:
-  agent1 half1: thinking 5.85s of 8s (wall 11.18s), calls 5330, errors 0
-  agent1 half2: thinking 5.85s of 8s (wall 11.19s), calls 5340, errors 0
-  agent2 half1: thinking 7.23s of 8s (wall 14.01s), calls 6779, errors 0
-  agent2 half2: thinking 7.27s of 8s (wall 14.05s), calls 6783, errors 0
-Speed: 5000 hands in 53.24s (94 hands/s)
+  agent1 half1: thinking 0.17s of 8s (wall 0.42s), calls 251, errors 0
+  agent1 half2: thinking 0.24s of 8s (wall 0.49s), calls 249, errors 0
+  agent2 half1: thinking 2.39s of 8s (wall 2.65s), calls 256, errors 0
+  agent2 half2: thinking 2.26s of 8s (wall 2.52s), calls 254, errors 0
+Speed: 200 hands in 6.22s (32 hands/s)
+
+============================================================
+  VERDICT: AGENT2 WINS  (Fish Dragon / bot_optim_cache (http://localhost:5009))
+  Points: agent1 0, agent2 1
+============================================================
+RESULT: AGENT2_WIN
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = Challenges Team / AlwaysPot (http://localhost:5008)
+agent2 = Fish Dragon / bot_optim_cache (http://localhost:5009)
+
+Duplicate match: 100 deals (200 hands), seed 7
+agent1: -4.820 bb/deal  (std 28.23, stderr 2.823)
+Confidence interval (z=1.96): [-10.352, +0.712] bb/deal
+Reason: interval [-10.352, +0.712] includes 0
+half1: agent1 -354 chips, agent2 +354 chips
+half2: agent1 -610 chips, agent2 +610 chips
+Faults:
+  agent1 half1: thinking 0.17s of 8s (wall 0.42s), calls 250, errors 0
+  agent1 half2: thinking 0.18s of 8s (wall 0.43s), calls 255, errors 0
+  agent2 half1: thinking 2.06s of 8s (wall 2.36s), calls 307, errors 0
+  agent2 half2: thinking 2.08s of 8s (wall 2.40s), calls 313, errors 0
+Speed: 200 hands in 5.79s (35 hands/s)
+
+============================================================
+  VERDICT: CHOP  (too close to call - half a win each)
+  Points: agent1 0.5, agent2 0.5
+============================================================
+RESULT: CHOP
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = Challenges Team / CallingStation (http://localhost:5008)
+agent2 = Fish Dragon / bot_optim_cache (http://localhost:5009)
+
+Duplicate match: 100 deals (200 hands), seed 7
+agent1: -10.490 bb/deal  (std 17.44, stderr 1.744)
+Confidence interval (z=1.96): [-13.908, -7.072] bb/deal
+Reason: interval [-13.908, -7.072] is entirely below 0
+half1: agent1 -896 chips, agent2 +896 chips
+half2: agent1 -1202 chips, agent2 +1202 chips
+Faults:
+  agent1 half1: thinking 0.38s of 8s (wall 0.89s), calls 516, errors 0
+  agent1 half2: thinking 0.40s of 8s (wall 0.92s), calls 520, errors 0
+  agent2 half1: thinking 4.82s of 8s (wall 5.23s), calls 402, errors 0
+  agent2 half2: thinking 4.81s of 8s (wall 5.21s), calls 402, errors 0
+Speed: 200 hands in 12.54s (16 hands/s)
+
+============================================================
+  VERDICT: AGENT2 WINS  (Fish Dragon / bot_optim_cache (http://localhost:5009))
+  Points: agent1 0, agent2 1
+============================================================
+RESULT: AGENT2_WIN
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = Challenges Team / AlwaysHalf (http://localhost:5008)
+agent2 = Fish Dragon / bot_optim_cache (http://localhost:5009)
+
+Duplicate match: 100 deals (200 hands), seed 7
+agent1: -5.790 bb/deal  (std 23.38, stderr 2.338)
+Confidence interval (z=1.96): [-10.372, -1.208] bb/deal
+Reason: interval [-10.372, -1.208] is entirely below 0
+half1: agent1 -558 chips, agent2 +558 chips
+half2: agent1 -600 chips, agent2 +600 chips
+Faults:
+  agent1 half1: thinking 0.21s of 8s (wall 0.55s), calls 338, errors 0
+  agent1 half2: thinking 0.22s of 8s (wall 0.56s), calls 343, errors 0
+  agent2 half1: thinking 2.81s of 8s (wall 3.22s), calls 409, errors 0
+  agent2 half2: thinking 2.79s of 8s (wall 3.20s), calls 409, errors 0
+Speed: 200 hands in 7.75s (26 hands/s)
+
+============================================================
+  VERDICT: AGENT2 WINS  (Fish Dragon / bot_optim_cache (http://localhost:5009))
+  Points: agent1 0, agent2 1
+============================================================
+RESULT: AGENT2_WIN
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = Fish Dragon / bot_base (http://localhost:5008)
+agent2 = Fish Dragon / bot_optim_cache (http://localhost:5009)
+
+Duplicate match: 1000 deals (2000 hands), seed 7
+agent1: -0.333 bb/deal  (std 12.92, stderr 0.409)
+Confidence interval (z=1.96): [-1.134, +0.468] bb/deal
+Reason: interval [-1.134, +0.468] includes 0
+half1: agent1 +498 chips, agent2 -498 chips
+half2: agent1 -1164 chips, agent2 +1164 chips
+Faults:
+  agent1 half1: thinking 8.00s of 8s (wall 10.54s), calls 2537, errors 0  TIME BANK EMPTY (3 calls skipped)
+  agent1 half2: thinking 8.00s of 8s (wall 9.96s), calls 1957, errors 0  TIME BANK EMPTY (77 calls skipped)
+  agent2 half1: thinking 8.00s of 8s (wall 10.37s), calls 2372, errors 0  TIME BANK EMPTY (284 calls skipped)
+  agent2 half2: thinking 8.00s of 8s (wall 9.66s), calls 1656, errors 0  TIME BANK EMPTY (566 calls skipped)
+Speed: 2000 hands in 42.58s (47 hands/s)
+
+============================================================
+  VERDICT: CHOP  (too close to call - half a win each)
+  Points: agent1 0.5, agent2 0.5
+============================================================
+RESULT: CHOP
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = ChrisC / GTOExploit-v2 (http://localhost:5008)
+agent2 = Fish Dragon / bot_optim_cache (http://localhost:5009)
+
+Duplicate match: 1000 deals (2000 hands), seed 7
+agent1: +1.071 bb/deal  (std 11.30, stderr 0.357)
+Confidence interval (z=1.96): [+0.371, +1.771] bb/deal
+Reason: interval [+0.371, +1.771] is entirely above 0
+half1: agent1 +1352 chips, agent2 -1352 chips
+half2: agent1 +790 chips, agent2 -790 chips
+Faults:
+  agent1 half1: thinking 5.86s of 8s (wall 7.59s), calls 1728, errors 0
+  agent1 half2: thinking 6.25s of 8s (wall 8.02s), calls 1768, errors 0
+  agent2 half1: thinking 8.00s of 8s (wall 9.38s), calls 1378, errors 0  TIME BANK EMPTY (846 calls skipped)
+  agent2 half2: thinking 8.00s of 8s (wall 9.47s), calls 1467, errors 0  TIME BANK EMPTY (779 calls skipped)
+Speed: 2000 hands in 36.25s (55 hands/s)
+
+============================================================
+  VERDICT: AGENT1 WINS  (ChrisC / GTOExploit-v2 (http://localhost:5008))
+  Points: agent1 1, agent2 0
+============================================================
+RESULT: AGENT1_WIN
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = Fish Dragon / bot_base_optim (http://localhost:5008)
+agent2 = Fish Dragon / bot_optim_cache (http://localhost:5009)
+
+Duplicate match: 1000 deals (2000 hands), seed 7
+agent1: +0.086 bb/deal  (std 12.12, stderr 0.383)
+Confidence interval (z=1.96): [-0.665, +0.837] bb/deal
+Reason: interval [-0.665, +0.837] includes 0
+half1: agent1 +337 chips, agent2 -337 chips
+half2: agent1 -165 chips, agent2 +165 chips
+Faults:
+  agent1 half1: thinking 8.00s of 8s (wall 9.63s), calls 1625, errors 0  TIME BANK EMPTY (150 calls skipped)
+  agent1 half2: thinking 8.00s of 8s (wall 9.53s), calls 1530, errors 0  TIME BANK EMPTY (122 calls skipped)
+  agent2 half1: thinking 8.00s of 8s (wall 9.66s), calls 1658, errors 0  TIME BANK EMPTY (187 calls skipped)
+  agent2 half2: thinking 8.00s of 8s (wall 9.55s), calls 1551, errors 0  TIME BANK EMPTY (213 calls skipped)
+Speed: 2000 hands in 40.04s (50 hands/s)
+
+============================================================
+  VERDICT: CHOP  (too close to call - half a win each)
+  Points: agent1 0.5, agent2 0.5
+============================================================
+RESULT: CHOP
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = Fish Dragon / bot_optim_cache (http://localhost:5008)
+agent2 = Fish Dragon / bot_optim_cache (http://localhost:5009)
+
+Duplicate match: 1000 deals (2000 hands), seed 7
+agent1: -0.729 bb/deal  (std 13.64, stderr 0.431)
+Confidence interval (z=1.96): [-1.574, +0.117] bb/deal
+Reason: interval [-1.574, +0.117] includes 0
+half1: agent1 +612 chips, agent2 -612 chips
+half2: agent1 -2069 chips, agent2 +2069 chips
+Faults:
+  agent1 half1: thinking 8.00s of 8s (wall 9.71s), calls 1705, errors 0  TIME BANK EMPTY (25 calls skipped)
+  agent1 half2: thinking 8.00s of 8s (wall 9.59s), calls 1593, errors 0  TIME BANK EMPTY (43 calls skipped)
+  agent2 half1: thinking 7.57s of 8s (wall 8.99s), calls 1413, errors 0
+  agent2 half2: thinking 7.55s of 8s (wall 8.78s), calls 1234, errors 0
+Speed: 2000 hands in 38.62s (52 hands/s)
 
 ============================================================
   VERDICT: CHOP  (too close to call - half a win each)

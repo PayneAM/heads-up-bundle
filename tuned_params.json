@@ -1,45 +1,198 @@
 {
   "meta": {
-    "candidates": 16,
-    "deals": 100,
-    "elapsed_seconds": 2137.8110250669997,
+    "args": {
+      "agent": "agent.py",
+      "anneal": true,
+      "bound": null,
+      "candidates": 24,
+      "cfg_hands": 1000,
+      "confirm_seeds": 3,
+      "constraint": null,
+      "deals": 100,
+      "finalists": 3,
+      "fixed_samples": 250,
+      "fixed_weight": 1.0,
+      "fresh_modules": false,
+      "generations": 16,
+      "hof_size": 5,
+      "holdout_seeds": 6,
+      "jobs": 13,
+      "min_target_floor": -0.5,
+      "mode": "mixed",
+      "mutation_rate": 0.25,
+      "opponents": [
+        "bots/bot_base_optim.py",
+        "bots/bot_optim_cache.py"
+      ],
+      "out": "tuned_params.json",
+      "pool_size": 3,
+      "promote_threshold": 0.1,
+      "promote_z": 1.5,
+      "repair_champion": true,
+      "rng_seed": 123,
+      "scale": 0.05267872234891776,
+      "seed_start": 1000,
+      "seeds": 3,
+      "self_weight": 1.0
+    },
     "final": true,
-    "generations": 10,
-    "jobs": 8,
-    "mode": "mixed",
-    "opponents": [
-      "/home/icarus/Documents/datathon/heads-up-bundle/bots/bot_mc_gto.py"
+    "history": [
+      {
+        "best_screen": 1.2005555555555556,
+        "generation": 1,
+        "promoted": false,
+        "seconds": 78.87820977799129
+      },
+      {
+        "best_screen": 0.6333333333333333,
+        "generation": 2,
+        "promoted": false,
+        "seconds": 79.3628716779931
+      },
+      {
+        "best_screen": 0.8733333333333334,
+        "generation": 3,
+        "promoted": false,
+        "seconds": 73.78165625099791
+      },
+      {
+        "best_screen": 1.1233333333333333,
+        "generation": 4,
+        "promoted": false,
+        "seconds": 73.43661664100364
+      },
+      {
+        "best_screen": 0.25333333333333335,
+        "generation": 5,
+        "promoted": false,
+        "seconds": 74.16190209801425
+      },
+      {
+        "best_screen": 1.2616666666666667,
+        "generation": 6,
+        "promoted": false,
+        "seconds": 73.99153062500409
+      },
+      {
+        "best_screen": 0.6122222222222222,
+        "generation": 7,
+        "promoted": false,
+        "seconds": 72.66031484902487
+      },
+      {
+        "best_screen": 0.47500000000000003,
+        "generation": 8,
+        "promoted": false,
+        "seconds": 74.85440350699355
+      },
+      {
+        "best_screen": 0.2727777777777778,
+        "generation": 9,
+        "promoted": true,
+        "seconds": 73.41857584100217
+      },
+      {
+        "best_screen": 0.3747222222222222,
+        "generation": 10,
+        "promoted": false,
+        "seconds": 103.22894984000595
+      },
+      {
+        "best_screen": 0.2544444444444444,
+        "generation": 11,
+        "promoted": false,
+        "seconds": 99.36294172299677
+      },
+      {
+        "best_screen": 0.3405555555555555,
+        "generation": 12,
+        "promoted": false,
+        "seconds": 95.93536792698433
+      },
+      {
+        "best_screen": 0.45444444444444443,
+        "generation": 13,
+        "promoted": false,
+        "seconds": 100.58556250599213
+      },
+      {
+        "best_screen": 0.31777777777777777,
+        "generation": 14,
+        "promoted": false,
+        "seconds": 97.18347459399956
+      },
+      {
+        "best_screen": 0.6155555555555555,
+        "generation": 15,
+        "promoted": false,
+        "seconds": 99.51882506199763
+      },
+      {
+        "best_screen": 0.2772222222222222,
+        "generation": 16,
+        "promoted": true,
+        "seconds": 100.24686637299601
+      }
     ],
-    "seeds": [
-      "1000",
-      "1001",
-      "1002"
-    ]
+    "holdout": {
+      "errors": 0,
+      "min_target": -0.2025,
+      "score": -0.047499999999999994,
+      "se": 0.3018826328362076,
+      "targets": [
+        {
+          "cand_abs": 0.19166666666666668,
+          "delta": 0.19166666666666668,
+          "n": 600,
+          "name": "original",
+          "se": 0.21760929959764638,
+          "weight": 1.0
+        },
+        {
+          "cand_abs": -0.37916666666666665,
+          "delta": -0.2025,
+          "n": 600,
+          "name": "bot_base_optim.py",
+          "se": 0.593617852060498,
+          "weight": 1.0
+        },
+        {
+          "cand_abs": -1.0416666666666667,
+          "delta": -0.13166666666666665,
+          "n": 600,
+          "name": "bot_optim_cache.py",
+          "se": 0.6484305317586359,
+          "weight": 1.0
+        }
+      ],
+      "z": -0.15734591802693088
+    },
+    "mode": "mixed"
   },
   "params": {
-    "base_call_margin": 0.02270156210351588,
-    "committed_margin_multiplier": 0.2440253069357071,
-    "fallback_call_price": 0.2122980532415271,
-    "flop_uncertainty_margin": 0.01744993003822473,
-    "fold_rate_half_discount": 0.07068301163842239,
-    "fold_rate_pot_discount": 0.02961356698070367,
-    "fold_rate_reference": 0.21890617586380268,
-    "half_raise_extra_edge": 0.04996424495793095,
-    "loose_raise_bonus": 0.0406442555984223,
-    "postflop_button_bonus": 0.020972863501891526,
-    "postflop_half_threshold": 0.5901707912394349,
-    "postflop_oop_penalty": 0.007343310193591451,
-    "postflop_pot_threshold": 0.47374874819669993,
-    "pot_raise_extra_margin": 0.02286518886617714,
-    "preflop_half_threshold": 0.4083007848495755,
-    "preflop_pot_threshold": 0.6203897702568292,
-    "preflop_uncertainty_margin": 0.005707642509210808,
-    "raise_count_margin": 0.012200732152020183,
-    "randomization": 0.003453708068845378,
-    "river_uncertainty_margin": 0.000985559753665914,
-    "short_stack_aggression_bonus": 0.022246280660350806,
-    "tight_raise_penalty": 0.19005785088404065,
-    "tight_raise_reference": 0.9685332631178623,
-    "turn_uncertainty_margin": 0.0031995999606983633
+    "base_call_margin": 0.015881544223668727,
+    "committed_margin_multiplier": 0.27079596811724144,
+    "fallback_call_price": 0.559557,
+    "flop_uncertainty_margin": 0.042052,
+    "fold_rate_half_discount": 0.043377,
+    "fold_rate_pot_discount": 0.018939,
+    "fold_rate_reference": 0.127151,
+    "half_raise_extra_edge": 0.068826,
+    "loose_raise_bonus": 0.04012503282954304,
+    "postflop_button_bonus": 0.015994,
+    "postflop_half_threshold": 0.630354,
+    "postflop_oop_penalty": 0.00232,
+    "postflop_pot_threshold": 0.650354,
+    "pot_raise_extra_margin": 0.04393701555758881,
+    "preflop_half_threshold": 0.48759506902892236,
+    "preflop_pot_threshold": 0.620579,
+    "preflop_uncertainty_margin": 0.010462851284676132,
+    "raise_count_margin": 0.006768,
+    "randomization": 0.002566818428118496,
+    "river_uncertainty_margin": 0.0011811142680083259,
+    "short_stack_aggression_bonus": 0.023370749253163865,
+    "tight_raise_penalty": 0.369535,
+    "tight_raise_reference": 0.758479,
+    "turn_uncertainty_margin": 0.001584
   }
 }

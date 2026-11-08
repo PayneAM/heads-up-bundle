@@ -23,10 +23,7 @@ need to change it, and if you break it the judge can't talk to your bot.
 """
 
 import os
-import sys
 import traceback
-
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import uvicorn
 from fastapi import FastAPI, Request

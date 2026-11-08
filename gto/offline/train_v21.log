@@ -1,0 +1,9 @@
+  vs eq      : eq-core +0.004 bb/hand
+  vs station : eq-core +1.206 bb/hand | exploit +7.983 bb/hand | exploit vs eq -0.382
+  vs maniac  : eq-core +1.915 bb/hand | exploit +5.345 bb/hand | exploit vs eq -0.249
+  vs nit     : eq-core +0.479 bb/hand | exploit +1.245 bb/hand | exploit vs eq -0.170
+  vs random  : eq-core +2.471 bb/hand | exploit +7.725 bb/hand | exploit vs eq -0.553
+  vs half    : eq-core +2.211 bb/hand | exploit +7.492 bb/hand | exploit vs eq -0.342
+  vs pot     : eq-core +1.850 bb/hand | exploit +4.298 bb/hand | exploit vs eq -0.165
+  vs honest  : eq-core +0.423 bb/hand | exploit +1.431 bb/hand | exploit vs eq -0.180
+saved C:\Users\chris\Datathon-2026\gto\data\strategy.npz

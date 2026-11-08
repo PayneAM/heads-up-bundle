@@ -1,0 +1,429 @@
+WARNING: starting params violate postflop_pot_threshold >= postflop_half_threshold + 0.02; constraint NOT enforced (use --repair-champion to fix it)
+================================================================================
+Base PARAMS from /home/icarus/Documents/datathon/heads-up-bundle/agent.py
+PARAMS = {
+    "base_call_margin": 0.015382,
+    "committed_margin_multiplier": 0.262490,
+    "fallback_call_price": 0.559557,
+    "flop_uncertainty_margin": 0.042052,
+    "fold_rate_half_discount": 0.043377,
+    "fold_rate_pot_discount": 0.018939,
+    "fold_rate_reference": 0.127151,
+    "half_raise_extra_edge": 0.068826,
+    "loose_raise_bonus": 0.043906,
+    "postflop_button_bonus": 0.015994,
+    "postflop_half_threshold": 0.630354,
+    "postflop_oop_penalty": 0.002320,
+    "postflop_pot_threshold": 0.357228,
+    "pot_raise_extra_margin": 0.043055,
+    "preflop_half_threshold": 0.519584,
+    "preflop_pot_threshold": 0.620579,
+    "preflop_uncertainty_margin": 0.010656,
+    "raise_count_margin": 0.006768,
+    "randomization": 0.002588,
+    "river_uncertainty_margin": 0.001203,
+    "short_stack_aggression_bonus": 0.024264,
+    "tight_raise_penalty": 0.369535,
+    "tight_raise_reference": 0.758479,
+    "turn_uncertainty_margin": 0.001584,
+}
+================================================================================
+mode=self opponents=[]
+generations=15 candidates=16 deals/half=100
+screen seeds=2 confirm seeds=4 finalists=3
+promote: delta>=+0.10 bb, z>=2.0, no target worse than -0.50
+fixed samples=250 cfg_hands=1000 jobs=12
+
+Sanity: champion vs itself +0.000±0.000 bb/deal -> OK
+
+================================================================================
+GENERATION 1/15  (scale 0.200)
+================================================================================
+targets: ['champion'] | candidates: 16 | screen seeds ['1002', '1003'] confirm seeds ['1004', '1005', '1006', '1007']
+
+screen (top 6):
+  cand 09: score +2.310±0.826 (z +2.8) min +2.31 err 0 | champion:+2.31±0.83
+  cand 02: score +1.500±0.856 (z +1.8) min +1.50 err 0 | champion:+1.50±0.86
+  cand 07: score +0.975±1.219 (z +0.8) min +0.97 err 0 | champion:+0.97±1.22
+  cand 04: score +0.700±0.745 (z +0.9) min +0.70 err 0 | champion:+0.70±0.75
+  cand 13: score +0.385±1.251 (z +0.3) min +0.39 err 0 | champion:+0.39±1.25
+  cand 08: score +0.300±1.483 (z +0.2) min +0.30 err 0 | champion:+0.30±1.48
+
+confirm (fresh seeds):
+  cand 09: score +1.042±0.705 (z +1.5) min +1.04 err 0 | champion:+1.04±0.71 -> rejected
+  cand 02: score +1.610±0.680 (z +2.4) min +1.61 err 0 | champion:+1.61±0.68 -> PROMOTABLE
+  cand 07: score -2.203±0.740 (z -3.0) min -2.20 err 0 | champion:-2.20±0.74 -> rejected
+
+PROMOTED cand 02 (+1.610 bb/deal vs old champion)
+PARAMS = {
+    "base_call_margin": 0.015382,
+    "committed_margin_multiplier": 0.262490,
+    "fallback_call_price": 0.452348,
+    "flop_uncertainty_margin": 0.042052,
+    "fold_rate_half_discount": 0.043377,
+    "fold_rate_pot_discount": 0.018939,
+    "fold_rate_reference": 0.127151,
+    "half_raise_extra_edge": 0.068826,
+    "loose_raise_bonus": 0.043906,
+    "postflop_button_bonus": 0.015994,
+    "postflop_half_threshold": 0.630354,
+    "postflop_oop_penalty": 0.002597,
+    "postflop_pot_threshold": 0.357228,
+    "pot_raise_extra_margin": 0.043055,
+    "preflop_half_threshold": 0.519584,
+    "preflop_pot_threshold": 0.620579,
+    "preflop_uncertainty_margin": 0.010656,
+    "raise_count_margin": 0.006768,
+    "randomization": 0.002779,
+    "river_uncertainty_margin": 0.001203,
+    "short_stack_aggression_bonus": 0.024264,
+    "tight_raise_penalty": 0.369535,
+    "tight_raise_reference": 0.896423,
+    "turn_uncertainty_margin": 0.001584,
+}
+Saved params to tuned_params.json
+generation time 6.2s
+================================================================================
+GENERATION 2/15  (scale 0.184)
+================================================================================
+targets: ['champion', 'anchor1'] | candidates: 20 | screen seeds ['1008', '1009'] confirm seeds ['1010', '1011', '1012', '1013']
+
+screen (top 6):
+  cand 02: score +2.188±0.897 (z +2.4) min +1.64 err 0 | champion:+1.64±1.20 anchor1:+2.73±1.33
+  cand 15: score +1.737±0.839 (z +2.1) min +0.96 err 0 | champion:+0.96±1.05 anchor1:+2.51±1.31
+  cand 12: score +1.712±0.835 (z +2.1) min +1.11 err 0 | champion:+1.11±0.82 anchor1:+2.31±1.46
+  cand 09: score +1.312±0.800 (z +1.6) min +0.61 err 0 | champion:+0.61±0.95 anchor1:+2.01±1.29
+  cand 10: score +1.005±0.586 (z +1.7) min +0.77 err 0 | champion:+0.77±0.49 anchor1:+1.24±1.07
+  cand 19: score +1.005±0.530 (z +1.9) min +0.47 err 0 | champion:+0.47±0.42 anchor1:+1.53±0.97
+
+confirm (fresh seeds):
+  cand 02: score +1.723±0.612 (z +2.8) min +1.33 err 0 | champion:+1.33±0.78 anchor1:+2.12±0.94 -> PROMOTABLE
+  cand 15: score +2.261±0.626 (z +3.6) min +1.39 err 0 | champion:+1.39±0.81 anchor1:+3.13±0.95 -> PROMOTABLE
+  cand 12: score -0.142±0.556 (z -0.3) min -0.71 err 0 | champion:-0.71±0.58 anchor1:+0.43±0.95 -> rejected
+
+PROMOTED cand 15 (+2.261 bb/deal vs old champion)
+PARAMS = {
+    "base_call_margin": 0.015382,
+    "committed_margin_multiplier": 0.262490,
+    "fallback_call_price": 0.376093,
+    "flop_uncertainty_margin": 0.043957,
+    "fold_rate_half_discount": 0.043377,
+    "fold_rate_pot_discount": 0.018939,
+    "fold_rate_reference": 0.148463,
+    "half_raise_extra_edge": 0.068826,
+    "loose_raise_bonus": 0.043906,
+    "postflop_button_bonus": 0.015994,
+    "postflop_half_threshold": 0.693811,
+    "postflop_oop_penalty": 0.002597,
+    "postflop_pot_threshold": 0.357228,
+    "pot_raise_extra_margin": 0.040505,
+    "preflop_half_threshold": 0.444304,
+    "preflop_pot_threshold": 0.620579,
+    "preflop_uncertainty_margin": 0.011187,
+    "raise_count_margin": 0.006768,
+    "randomization": 0.002779,
+    "river_uncertainty_margin": 0.001203,
+    "short_stack_aggression_bonus": 0.024264,
+    "tight_raise_penalty": 0.413532,
+    "tight_raise_reference": 0.896423,
+    "turn_uncertainty_margin": 0.001584,
+}
+Saved params to tuned_params.json
+generation time 9.2s
+================================================================================
+GENERATION 3/15  (scale 0.169)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1014', '1015'] confirm seeds ['1016', '1017', '1018', '1019']
+
+screen (top 6):
+  cand 14: score +0.430±0.543 (z +0.8) min -0.62 err 0 | champion:+1.84±0.79 anchor1:+0.07±1.13 hof2:-0.62±0.87
+  cand 09: score +0.295±0.466 (z +0.6) min -0.07 err 0 | champion:+0.64±0.69 anchor1:-0.07±0.90 hof2:+0.32±0.82
+  cand 15: score +0.192±0.408 (z +0.5) min -1.18 err 0 | champion:+1.47±0.53 anchor1:-1.18±0.92 hof2:+0.29±0.61
+  cand 10: score +0.052±0.563 (z +0.1) min -0.69 err 0 | champion:-0.07±0.55 anchor1:+0.92±1.20 hof2:-0.69±1.05
+  cand 01: score +0.000±0.000 (z +0.0) min +0.00 err 0 | champion:+0.00±0.00 anchor1:+0.00±0.00 hof2:+0.00±0.00
+  cand 06: score +0.000±0.000 (z +0.0) min +0.00 err 0 | champion:+0.00±0.00 anchor1:+0.00±0.00 hof2:+0.00±0.00
+
+confirm (fresh seeds):
+  cand 14: score +0.060±0.390 (z +0.2) min -0.09 err 0 | champion:+0.05±0.55 anchor1:+0.22±0.81 hof2:-0.09±0.65 -> rejected
+  cand 09: score -0.058±0.360 (z -0.2) min -0.18 err 0 | champion:+0.07±0.52 anchor1:-0.18±0.74 hof2:-0.07±0.59 -> rejected
+  cand 15: score -0.385±0.328 (z -1.2) min -0.60 err 0 | champion:-0.25±0.50 anchor1:-0.60±0.62 hof2:-0.30±0.58 -> rejected
+
+No promotion this generation.
+generation time 13.1s
+================================================================================
+GENERATION 4/15  (scale 0.156)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1020', '1021'] confirm seeds ['1022', '1023', '1024', '1025']
+
+screen (top 6):
+  cand 02: score +1.053±0.518 (z +2.0) min +0.38 err 0 | champion:+1.67±0.95 anchor1:+0.38±0.78 hof2:+1.11±0.95
+  cand 07: score +0.798±0.711 (z +1.1) min -0.07 err 0 | champion:+1.81±1.11 anchor1:-0.07±1.22 hof2:+0.66±1.35
+  cand 03: score +0.180±0.216 (z +0.8) min -0.03 err 0 | champion:+0.10±0.19 anchor1:-0.03±0.52 hof2:+0.47±0.33
+  cand 05: score +0.040±0.610 (z +0.1) min -0.69 err 0 | champion:+0.59±0.96 anchor1:-0.69±1.11 hof2:+0.22±1.10
+  cand 00: score +0.018±0.158 (z +0.1) min +0.00 err 0 | champion:+0.03±0.34 anchor1:+0.03±0.34 hof2:+0.00±0.00
+  cand 06: score -0.002±0.082 (z -0.0) min -0.01 err 0 | champion:+0.00±0.00 anchor1:-0.01±0.25 hof2:+0.00±0.00
+
+confirm (fresh seeds):
+  cand 02: score +0.137±0.349 (z +0.4) min -0.40 err 0 | champion:-0.40±0.52 anchor1:-0.38±0.61 hof2:+1.19±0.67 -> rejected
+  cand 07: score +0.319±0.442 (z +0.7) min -0.16 err 0 | champion:-0.16±0.72 anchor1:+0.16±0.80 hof2:+0.95±0.77 -> rejected
+  cand 03: score -0.174±0.157 (z -1.1) min -0.71 err 0 | champion:+0.12±0.08 anchor1:-0.71±0.45 hof2:+0.07±0.12 -> rejected
+
+No promotion this generation.
+generation time 13.6s
+================================================================================
+GENERATION 5/15  (scale 0.143)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1026', '1027'] confirm seeds ['1028', '1029', '1030', '1031']
+
+screen (top 6):
+  cand 09: score +0.487±0.706 (z +0.7) min -0.04 err 0 | champion:+0.43±1.00 anchor1:-0.04±1.24 hof2:+1.06±1.40
+  cand 00: score +0.243±0.534 (z +0.5) min -0.27 err 0 | champion:+0.73±0.80 anchor1:+0.26±0.94 hof2:-0.27±1.01
+  cand 07: score -0.142±0.559 (z -0.3) min -1.02 err 0 | champion:+1.00±0.96 anchor1:-1.02±1.09 hof2:-0.41±0.84
+  cand 15: score -0.167±0.728 (z -0.2) min -0.42 err 0 | champion:-0.04±1.05 anchor1:-0.42±1.37 hof2:-0.04±1.34
+  cand 06: score -0.172±0.368 (z -0.5) min -0.23 err 0 | champion:-0.11±0.65 anchor1:-0.18±0.73 hof2:-0.23±0.52
+  cand 17: score -0.368±0.580 (z -0.6) min -1.04 err 0 | champion:-1.04±0.94 anchor1:-0.81±1.08 hof2:+0.74±0.99
+
+confirm (fresh seeds):
+  cand 09: score -1.591±0.506 (z -3.1) min -2.68 err 0 | champion:+0.15±0.76 anchor1:-2.68±0.97 hof2:-2.24±0.88 -> rejected
+  cand 00: score -0.432±0.382 (z -1.1) min -1.24 err 0 | champion:-0.14±0.49 anchor1:-1.24±0.77 hof2:+0.09±0.69 -> rejected
+  cand 07: score -0.416±0.333 (z -1.2) min -0.98 err 0 | champion:+0.03±0.51 anchor1:-0.98±0.69 hof2:-0.29±0.51 -> rejected
+
+No promotion this generation.
+generation time 13.9s
+================================================================================
+GENERATION 6/15  (scale 0.132)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1032', '1033'] confirm seeds ['1034', '1035', '1036', '1037']
+
+screen (top 6):
+  cand 10: score +0.587±0.615 (z +1.0) min -0.14 err 0 | champion:+0.67±0.68 anchor1:+1.23±1.26 hof2:-0.14±1.17
+  cand 13: score +0.388±0.502 (z +0.8) min -0.28 err 0 | champion:+0.38±0.42 anchor1:+1.07±1.03 hof2:-0.28±1.02
+  cand 03: score +0.273±0.452 (z +0.6) min +0.10 err 0 | champion:+0.10±0.54 anchor1:+0.28±0.54 hof2:+0.45±1.12
+  cand 00: score +0.117±0.596 (z +0.2) min -0.81 err 0 | champion:+0.73±0.78 anchor1:+0.42±1.20 hof2:-0.81±1.07
+  cand 12: score +0.080±0.457 (z +0.2) min -0.45 err 0 | champion:-0.18±0.63 anchor1:+0.87±0.80 hof2:-0.45±0.91
+  cand 15: score +0.048±0.122 (z +0.4) min +0.00 err 0 | champion:+0.13±0.37 anchor1:+0.01±0.01 hof2:+0.00±0.00
+
+confirm (fresh seeds):
+  cand 10: score +0.634±0.419 (z +1.5) min +0.06 err 0 | champion:+1.29±0.56 anchor1:+0.06±0.84 hof2:+0.55±0.75 -> rejected
+  cand 13: score +0.347±0.372 (z +0.9) min -0.20 err 0 | champion:+0.33±0.50 anchor1:+0.92±0.73 hof2:-0.20±0.67 -> rejected
+  cand 03: score -0.907±0.365 (z -2.5) min -1.48 err 0 | champion:-0.18±0.65 anchor1:-1.48±0.59 hof2:-1.07±0.66 -> rejected
+
+No promotion this generation.
+generation time 13.3s
+================================================================================
+GENERATION 7/15  (scale 0.121)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1038', '1039'] confirm seeds ['1040', '1041', '1042', '1043']
+
+screen (top 6):
+  cand 14: score +0.963±0.441 (z +2.2) min +0.29 err 0 | champion:+0.29±0.69 anchor1:+0.81±0.77 hof2:+1.79±0.82
+  cand 15: score +0.873±0.360 (z +2.4) min +0.42 err 0 | champion:+0.42±0.42 anchor1:+1.11±0.75 hof2:+1.09±0.65
+  cand 12: score +0.808±0.615 (z +1.3) min -0.23 err 0 | champion:+0.57±1.06 anchor1:+2.08±1.07 hof2:-0.23±1.07
+  cand 17: score +0.452±0.542 (z +0.8) min -0.46 err 0 | champion:-0.46±0.90 anchor1:+1.41±0.95 hof2:+0.41±0.97
+  cand 11: score +0.215±0.242 (z +0.9) min +0.00 err 0 | champion:+0.27±0.50 anchor1:+0.38±0.53 hof2:+0.00±0.00
+  cand 09: score +0.172±0.580 (z +0.3) min -1.05 err 0 | champion:+0.64±0.86 anchor1:-1.05±1.09 hof2:+0.93±1.05
+
+confirm (fresh seeds):
+  cand 14: score +0.151±0.246 (z +0.6) min -0.45 err 0 | champion:-0.45±0.47 anchor1:+0.08±0.38 hof2:+0.83±0.42 -> rejected
+  cand 15: score -0.116±0.255 (z -0.5) min -0.38 err 0 | champion:-0.38±0.18 anchor1:+0.36±0.55 hof2:-0.33±0.50 -> rejected
+  cand 12: score +0.585±0.422 (z +1.4) min -0.24 err 0 | champion:-0.24±0.61 anchor1:+1.50±0.91 hof2:+0.50±0.64 -> rejected
+
+No promotion this generation.
+generation time 13.7s
+================================================================================
+GENERATION 8/15  (scale 0.112)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1044', '1045'] confirm seeds ['1046', '1047', '1048', '1049']
+
+screen (top 6):
+  cand 03: score +0.864±0.437 (z +2.0) min +0.26 err 0 | champion:+1.90±0.77 anchor1:+0.44±0.65 hof2:+0.26±0.84
+  cand 00: score +0.417±0.335 (z +1.2) min +0.21 err 0 | champion:+0.28±0.61 anchor1:+0.21±0.16 hof2:+0.76±0.78
+  cand 09: score +0.267±0.318 (z +0.8) min -0.10 err 0 | champion:-0.10±0.20 anchor1:+0.42±0.52 hof2:+0.47±0.77
+  cand 10: score +0.188±0.607 (z +0.3) min -0.30 err 0 | champion:-0.30±0.97 anchor1:+0.35±1.22 hof2:+0.52±0.95
+  cand 07: score +0.116±0.195 (z +0.6) min -0.35 err 0 | champion:-0.35±0.26 anchor1:-0.09±0.14 hof2:+0.79±0.51
+  cand 14: score +0.076±0.612 (z +0.1) min -1.24 err 0 | champion:-1.24±0.81 anchor1:+0.37±1.22 hof2:+1.09±1.11
+
+confirm (fresh seeds):
+  cand 03: score -0.395±0.343 (z -1.2) min -0.60 err 0 | champion:-0.55±0.50 anchor1:-0.60±0.69 hof2:-0.04±0.58 -> rejected
+  cand 00: score +0.212±0.248 (z +0.9) min -0.10 err 0 | champion:+0.14±0.40 anchor1:-0.10±0.49 hof2:+0.60±0.40 -> rejected
+  cand 09: score -0.108±0.220 (z -0.5) min -0.27 err 0 | champion:-0.27±0.48 anchor1:-0.17±0.21 hof2:+0.12±0.41 -> rejected
+
+No promotion this generation.
+generation time 13.6s
+================================================================================
+GENERATION 9/15  (scale 0.103)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1050', '1051'] confirm seeds ['1052', '1053', '1054', '1055']
+
+screen (top 6):
+  cand 15: score +0.328±0.592 (z +0.6) min -0.92 err 0 | champion:+0.97±0.72 anchor1:-0.92±1.15 hof2:+0.93±1.15
+  cand 12: score +0.323±0.192 (z +1.7) min +0.00 err 0 | champion:+0.36±0.24 anchor1:+0.00±0.00 hof2:+0.61±0.52
+  cand 18: score +0.208±0.244 (z +0.9) min -0.31 err 0 | champion:+0.34±0.45 anchor1:-0.31±0.24 hof2:+0.59±0.52
+  cand 04: score +0.072±0.438 (z +0.2) min -0.32 err 0 | champion:-0.32±0.66 anchor1:+0.57±0.97 hof2:-0.04±0.60
+  cand 09: score +0.057±0.057 (z +1.0) min +0.00 err 0 | champion:+0.17±0.17 anchor1:+0.00±0.00 hof2:+0.00±0.00
+  cand 14: score +0.000±0.000 (z +0.0) min +0.00 err 0 | champion:+0.00±0.00 anchor1:+0.00±0.00 hof2:+0.00±0.00
+
+confirm (fresh seeds):
+  cand 15: score -0.527±0.422 (z -1.3) min -1.68 err 0 | champion:-0.24±0.75 anchor1:+0.34±0.73 hof2:-1.68±0.71 -> rejected
+  cand 12: score -0.041±0.109 (z -0.4) min -0.19 err 0 | champion:-0.19±0.15 anchor1:-0.12±0.12 hof2:+0.19±0.27 -> rejected
+  cand 18: score +0.029±0.143 (z +0.2) min +0.00 err 0 | champion:+0.08±0.17 anchor1:+0.00±0.25 hof2:+0.00±0.30 -> rejected
+
+No promotion this generation.
+generation time 13.7s
+================================================================================
+GENERATION 10/15  (scale 0.094)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1056', '1057'] confirm seeds ['1058', '1059', '1060', '1061']
+
+screen (top 6):
+  cand 08: score +0.754±0.613 (z +1.2) min +0.00 err 0 | champion:+1.09±1.05 anchor1:+0.00±1.18 hof2:+1.17±0.94
+  cand 16: score +0.682±0.659 (z +1.0) min +0.03 err 0 | champion:+0.94±0.92 anchor1:+0.03±1.47 hof2:+1.08±0.95
+  cand 12: score +0.296±0.621 (z +0.5) min -1.03 err 0 | champion:+0.55±0.80 anchor1:-1.03±1.28 hof2:+1.38±1.09
+  cand 00: score +0.277±0.464 (z +0.6) min -0.04 err 0 | champion:+0.80±0.83 anchor1:-0.04±0.59 hof2:+0.07±0.95
+  cand 02: score +0.257±0.154 (z +1.7) min +0.00 err 0 | champion:+0.00±0.00 anchor1:+0.23±0.21 hof2:+0.54±0.41
+  cand 09: score +0.245±0.474 (z +0.5) min -0.10 err 0 | champion:+0.11±0.78 anchor1:-0.10±0.79 hof2:+0.72±0.89
+
+confirm (fresh seeds):
+  cand 08: score -0.710±0.424 (z -1.7) min -0.75 err 0 | champion:-0.65±0.61 anchor1:-0.73±0.80 hof2:-0.75±0.78 -> rejected
+  cand 16: score -1.456±0.465 (z -3.1) min -1.97 err 0 | champion:-1.10±0.72 anchor1:-1.97±0.94 hof2:-1.29±0.74 -> rejected
+  cand 12: score -0.637±0.312 (z -2.0) min -1.10 err 0 | champion:-0.49±0.49 anchor1:-1.10±0.61 hof2:-0.32±0.51 -> rejected
+
+No promotion this generation.
+generation time 12.8s
+================================================================================
+GENERATION 11/15  (scale 0.087)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1062', '1063'] confirm seeds ['1064', '1065', '1066', '1067']
+
+screen (top 6):
+  cand 01: score +0.665±0.709 (z +0.9) min -0.39 err 0 | champion:+1.89±1.00 anchor1:+0.50±1.35 hof2:-0.39±1.30
+  cand 07: score +0.393±0.402 (z +1.0) min -0.21 err 0 | champion:+1.20±0.82 anchor1:+0.19±0.53 hof2:-0.21±0.71
+  cand 08: score +0.385±0.487 (z +0.8) min -0.53 err 0 | champion:+0.74±0.77 anchor1:+0.94±0.92 hof2:-0.53±0.83
+  cand 16: score +0.210±0.350 (z +0.6) min -0.19 err 0 | champion:-0.15±0.18 anchor1:+0.97±0.64 hof2:-0.19±0.81
+  cand 04: score +0.048±0.750 (z +0.1) min -1.35 err 0 | champion:+1.07±1.04 anchor1:+0.42±1.47 hof2:-1.35±1.35
+  cand 06: score +0.020±0.599 (z +0.0) min -0.77 err 0 | champion:+0.20±1.01 anchor1:+0.62±0.99 hof2:-0.77±1.11
+
+confirm (fresh seeds):
+  cand 01: score +0.411±0.402 (z +1.0) min -0.12 err 0 | champion:+0.33±0.61 anchor1:-0.12±0.76 hof2:+1.03±0.71 -> rejected
+  cand 07: score +0.165±0.280 (z +0.6) min +0.01 err 0 | champion:+0.15±0.53 anchor1:+0.33±0.49 hof2:+0.01±0.43 -> rejected
+  cand 08: score +0.069±0.334 (z +0.2) min -0.17 err 0 | champion:-0.17±0.43 anchor1:+0.37±0.68 hof2:+0.01±0.59 -> rejected
+
+No promotion this generation.
+generation time 12.5s
+================================================================================
+GENERATION 12/15  (scale 0.080)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1068', '1069'] confirm seeds ['1070', '1071', '1072', '1073']
+
+screen (top 6):
+  cand 01: score +0.145±0.552 (z +0.3) min -1.10 err 0 | champion:-1.10±0.80 anchor1:+1.15±1.07 hof2:+0.39±0.97
+  cand 07: score +0.142±0.470 (z +0.3) min -1.23 err 0 | champion:+0.48±0.67 anchor1:+1.18±0.88 hof2:-1.23±0.87
+  cand 17: score +0.130±0.513 (z +0.3) min -1.03 err 0 | champion:+0.52±0.68 anchor1:+0.91±0.91 hof2:-1.03±1.04
+  cand 03: score +0.097±0.087 (z +1.1) min +0.00 err 0 | champion:+0.29±0.26 anchor1:+0.00±0.00 hof2:+0.00±0.00
+  cand 04: score +0.097±0.087 (z +1.1) min +0.00 err 0 | champion:+0.29±0.26 anchor1:+0.00±0.00 hof2:+0.00±0.00
+  cand 15: score +0.035±0.225 (z +0.2) min -0.45 err 0 | champion:+0.56±0.56 anchor1:+0.00±0.00 hof2:-0.45±0.38
+
+confirm (fresh seeds):
+  cand 01: score +0.041±0.388 (z +0.1) min -0.20 err 0 | champion:+0.50±0.52 anchor1:-0.20±0.71 hof2:-0.18±0.76 -> rejected
+  cand 07: score -0.237±0.327 (z -0.7) min -0.35 err 0 | champion:-0.32±0.45 anchor1:-0.04±0.63 hof2:-0.35±0.60 -> rejected
+  cand 17: score -0.023±0.382 (z -0.1) min -0.85 err 0 | champion:-0.85±0.51 anchor1:+0.84±0.77 hof2:-0.06±0.67 -> rejected
+
+No promotion this generation.
+generation time 12.5s
+================================================================================
+GENERATION 13/15  (scale 0.074)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1074', '1075'] confirm seeds ['1076', '1077', '1078', '1079']
+
+screen (top 6):
+  cand 14: score +1.205±0.491 (z +2.5) min +0.54 err 0 | champion:+0.54±0.63 anchor1:+1.44±1.01 hof2:+1.64±0.86
+  cand 08: score +0.627±0.637 (z +1.0) min +0.20 err 0 | champion:+1.00±0.75 anchor1:+0.68±1.35 hof2:+0.20±1.12
+  cand 17: score +0.588±0.641 (z +0.9) min -0.12 err 0 | champion:+0.51±0.68 anchor1:+1.38±1.41 hof2:-0.12±1.12
+  cand 15: score +0.233±0.623 (z +0.4) min -0.22 err 0 | champion:+0.38±0.75 anchor1:+0.55±1.26 hof2:-0.22±1.15
+  cand 09: score +0.070±0.176 (z +0.4) min +0.00 err 0 | champion:+0.00±0.00 anchor1:+0.00±0.00 hof2:+0.21±0.53
+  cand 04: score +0.020±0.579 (z +0.0) min -1.02 err 0 | champion:+0.56±0.34 anchor1:-1.02±1.32 hof2:+0.52±1.07
+
+confirm (fresh seeds):
+  cand 14: score -0.625±0.329 (z -1.9) min -1.36 err 0 | champion:-0.30±0.44 anchor1:-1.36±0.65 hof2:-0.21±0.60 -> rejected
+  cand 08: score -0.024±0.383 (z -0.1) min -0.62 err 0 | champion:+0.51±0.53 anchor1:+0.04±0.72 hof2:-0.62±0.72 -> rejected
+  cand 17: score +0.043±0.409 (z +0.1) min -0.23 err 0 | champion:+0.55±0.56 anchor1:-0.23±0.83 hof2:-0.19±0.72 -> rejected
+
+No promotion this generation.
+generation time 12.8s
+================================================================================
+GENERATION 14/15  (scale 0.068)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1080', '1081'] confirm seeds ['1082', '1083', '1084', '1085']
+
+screen (top 6):
+  cand 13: score +0.107±0.127 (z +0.8) min +0.00 err 0 | champion:+0.18±0.35 anchor1:+0.00±0.00 hof2:+0.14±0.14
+  cand 12: score +0.032±0.158 (z +0.2) min -0.09 err 0 | champion:+0.18±0.35 anchor1:-0.09±0.31 hof2:+0.00±0.00
+  cand 14: score +0.015±0.228 (z +0.1) min -0.04 err 0 | champion:+0.00±0.00 anchor1:+0.09±0.45 hof2:-0.04±0.51
+  cand 08: score +0.000±0.000 (z +0.0) min +0.00 err 0 | champion:+0.00±0.00 anchor1:+0.00±0.00 hof2:+0.00±0.00
+  cand 07: score -0.003±0.240 (z -0.0) min -0.12 err 0 | champion:+0.00±0.00 anchor1:+0.10±0.45 hof2:-0.12±0.56
+  cand 00: score -0.018±0.105 (z -0.2) min -0.06 err 0 | champion:+0.00±0.00 anchor1:-0.06±0.31 hof2:+0.00±0.00
+
+confirm (fresh seeds):
+  cand 13: score +0.012±0.013 (z +0.9) min -0.00 err 0 | champion:+0.04±0.04 anchor1:-0.00±0.00 hof2:+0.00±0.00 -> rejected
+  cand 12: score +0.034±0.035 (z +1.0) min -0.00 err 0 | champion:+0.00±0.00 anchor1:-0.00±0.00 hof2:+0.10±0.11 -> rejected
+  cand 14: score -0.084±0.081 (z -1.0) min -0.28 err 0 | champion:+0.00±0.00 anchor1:-0.28±0.24 hof2:+0.02±0.02 -> rejected
+
+No promotion this generation.
+generation time 12.7s
+================================================================================
+GENERATION 15/15  (scale 0.062)
+================================================================================
+targets: ['champion', 'anchor1', 'hof2'] | candidates: 20 | screen seeds ['1086', '1087'] confirm seeds ['1088', '1089', '1090', '1091']
+
+screen (top 6):
+  cand 14: score +1.490±0.605 (z +2.5) min +0.01 err 0 | champion:+0.01±0.76 anchor1:+2.28±1.24 hof2:+2.17±1.08
+  cand 08: score +0.952±0.431 (z +2.2) min -0.41 err 0 | champion:-0.41±0.59 anchor1:+2.13±0.80 hof2:+1.13±0.83
+  cand 16: score +0.852±0.623 (z +1.4) min +0.25 err 0 | champion:+0.25±0.89 anchor1:+1.91±1.34 hof2:+0.40±0.95
+  cand 15: score +0.673±0.477 (z +1.4) min +0.45 err 0 | champion:+0.45±0.54 anchor1:+0.80±1.02 hof2:+0.78±0.85
+  cand 19: score +0.495±0.591 (z +0.8) min -0.19 err 0 | champion:-0.19±0.71 anchor1:+0.76±1.15 hof2:+0.92±1.15
+  cand 11: score +0.468±0.494 (z +0.9) min +0.35 err 0 | champion:+0.64±0.68 anchor1:+0.41±1.01 hof2:+0.35±0.85
+
+confirm (fresh seeds):
+  cand 14: score -0.748±0.401 (z -1.9) min -1.43 err 0 | champion:+0.01±0.52 anchor1:-0.82±0.74 hof2:-1.43±0.79 -> rejected
+  cand 08: score +0.352±0.387 (z +0.9) min -0.21 err 0 | champion:+0.44±0.63 anchor1:+0.83±0.66 hof2:-0.21±0.72 -> rejected
+  cand 16: score -1.136±0.491 (z -2.3) min -1.61 err 0 | champion:-0.89±0.77 anchor1:-1.61±0.99 hof2:-0.91±0.77 -> rejected
+
+No promotion this generation.
+generation time 13.0s
+
+================================================================================
+TUNING COMPLETE in 187.8s | promotions: 2/15
+================================================================================
+
+HOLD-OUT on unseen seeds ['1092', '1093', '1094', '1095', '1096', '1097'] (final champion minus original, bb/deal):
+  score +1.583±0.730 (z +2.2) min +1.58 err 0 | original:+1.58±0.73
+  delta vs 'original' = head-to-head; delta vs a fixed bot = improvement over the original's result against it.
+
+Final PARAMS:
+PARAMS = {
+    "base_call_margin": 0.015382,
+    "committed_margin_multiplier": 0.262490,
+    "fallback_call_price": 0.376093,
+    "flop_uncertainty_margin": 0.043957,
+    "fold_rate_half_discount": 0.043377,
+    "fold_rate_pot_discount": 0.018939,
+    "fold_rate_reference": 0.148463,
+    "half_raise_extra_edge": 0.068826,
+    "loose_raise_bonus": 0.043906,
+    "postflop_button_bonus": 0.015994,
+    "postflop_half_threshold": 0.693811,
+    "postflop_oop_penalty": 0.002597,
+    "postflop_pot_threshold": 0.357228,
+    "pot_raise_extra_margin": 0.040505,
+    "preflop_half_threshold": 0.444304,
+    "preflop_pot_threshold": 0.620579,
+    "preflop_uncertainty_margin": 0.011187,
+    "raise_count_margin": 0.006768,
+    "randomization": 0.002779,
+    "river_uncertainty_margin": 0.001203,
+    "short_stack_aggression_bonus": 0.024264,
+    "tight_raise_penalty": 0.413532,
+    "tight_raise_reference": 0.896423,
+    "turn_uncertainty_margin": 0.001584,
+}
+Saved params to tuned_params.json
