@@ -1,0 +1,605 @@
+================================================================================
+Loaded base PARAMS from /home/icarus/Documents/datathon/heads-up-bundle/agent.py
+PARAMS = {
+    "base_call_margin": 0.023883,
+    "committed_margin_multiplier": 0.250000,
+    "fallback_call_price": 0.201214,
+    "flop_uncertainty_margin": 0.011106,
+    "fold_rate_half_discount": 0.059838,
+    "fold_rate_pot_discount": 0.055077,
+    "fold_rate_reference": 0.244240,
+    "half_raise_extra_edge": 0.089114,
+    "loose_raise_bonus": 0.036145,
+    "postflop_button_bonus": 0.016917,
+    "postflop_half_threshold": 0.471649,
+    "postflop_oop_penalty": 0.008580,
+    "postflop_pot_threshold": 0.589222,
+    "pot_raise_extra_margin": 0.014771,
+    "preflop_half_threshold": 0.478048,
+    "preflop_pot_threshold": 0.554061,
+    "preflop_uncertainty_margin": 0.007109,
+    "raise_count_margin": 0.013705,
+    "randomization": 0.003358,
+    "river_uncertainty_margin": 0.001012,
+    "short_stack_aggression_bonus": 0.020592,
+    "tight_raise_penalty": 0.224041,
+    "tight_raise_reference": 0.550000,
+    "turn_uncertainty_margin": 0.005109,
+}
+================================================================================
+
+Tuning settings:
+  mode: mixed
+  agent: /home/icarus/Documents/datathon/heads-up-bundle/agent.py
+  opponents: ['/home/icarus/Documents/datathon/heads-up-bundle/bots/bot_mc_gto.py']
+  generations: 10
+  candidates/generation: 16
+  deals/half/seed: 100
+  seeds: ['1000', '1001', '1002']
+  jobs: 8
+  mutation scale: 0.2
+  mutation rate: 0.75
+  promote threshold: +0.200
+  min target floor: -0.350
+  self weight: 1.0
+  fixed weight: 1.0
+
+Sanity check: champion vs champion...
+  champion self score: +0.000
+
+================================================================================
+GENERATION 1/10
+================================================================================
+gen 01 cand 04/16: score=-0.035 min_target=-0.297 champion=+0.227[+1.240 -1.020 +0.460]/err0 | bot_mc_gto.py=-0.297[-1.660 -1.060 +1.830]/err0 errors=0 time=81.8s
+gen 01 cand 08/16: score=-0.968 min_target=-1.567 champion=-0.370[-1.240 +0.780 -0.650]/err0 | bot_mc_gto.py=-1.567[-2.010 -0.640 -2.050]/err0 errors=0 time=82.2s
+gen 01 cand 02/16: score=+1.137 min_target=-1.162 champion=-1.162[-2.800 -2.940 +2.255]/err0 | bot_mc_gto.py=+3.437[+1.750 +4.880 +3.680]/err0 errors=0 time=84.7s
+gen 01 cand 03/16: score=-0.196 min_target=-0.847 champion=-0.847[-1.780 +0.350 -1.110]/err0 | bot_mc_gto.py=+0.455[-0.250 -0.260 +1.875]/err0 errors=0 time=85.1s
+gen 01 cand 07/16: score=-0.907 min_target=-1.173 champion=-0.640[-1.300 -0.610 -0.010]/err0 | bot_mc_gto.py=-1.173[-1.120 -2.170 -0.230]/err0 errors=0 time=85.8s
+gen 01 cand 05/16: score=-0.445 min_target=-0.933 champion=+0.043[-0.700 +0.110 +0.720]/err0 | bot_mc_gto.py=-0.933[-1.560 -0.180 -1.060]/err0 errors=0 time=86.5s
+gen 01 cand 01/16: score=-0.732 min_target=-2.457 champion=-2.457[-1.340 -2.030 -4.000]/err0 | bot_mc_gto.py=+0.993[+2.790 -0.290 +0.480]/err0 errors=0 time=86.6s
+gen 01 cand 06/16: score=-0.147 min_target=-1.730 champion=-1.730[-1.810 -0.200 -3.180]/err0 | bot_mc_gto.py=+1.437[+3.020 -1.710 +3.000]/err0 errors=0 time=88.4s
+gen 01 cand 09/16: score=-1.108 min_target=-1.500 champion=-0.717[+0.080 +0.840 -3.070]/err0 | bot_mc_gto.py=-1.500[-1.700 +0.090 -2.890]/err0 errors=0 time=72.1s
+gen 01 cand 15/16: score=-0.915 min_target=-0.932 champion=-0.932[-2.920 +0.140 -0.015]/err0 | bot_mc_gto.py=-0.898[-1.450 -0.470 -0.775]/err0 errors=0 time=71.7s
+gen 01 cand 10/16: score=+0.107 min_target=-1.083 champion=-1.083[-1.920 -0.370 -0.960]/err0 | bot_mc_gto.py=+1.297[+3.460 -0.270 +0.700]/err0 errors=0 time=78.7s
+gen 01 cand 11/16: score=+1.818 min_target=-0.390 champion=-0.390[-0.930 +0.200 -0.440]/err0 | bot_mc_gto.py=+4.027[+6.210 +6.240 -0.370]/err0 errors=0 time=78.1s
+gen 01 cand 16/16: score=-1.115 min_target=-1.173 champion=-1.173[-1.410 -0.640 -1.470]/err0 | bot_mc_gto.py=-1.057[-3.810 +2.420 -1.780]/err0 errors=0 time=75.7s
+gen 01 cand 12/16: score=-0.772 min_target=-0.923 champion=-0.923[-1.350 -0.390 -1.030]/err0 | bot_mc_gto.py=-0.620[-2.270 +0.300 +0.110]/err0 errors=0 time=80.1s
+gen 01 cand 14/16: score=-0.722 min_target=-0.750 champion=-0.693[-0.020 -1.130 -0.930]/err0 | bot_mc_gto.py=-0.750[-1.440 -0.030 -0.780]/err0 errors=0 time=78.7s
+gen 01 cand 13/16: score=+0.760 min_target=+0.097 champion=+0.097[+1.110 -0.510 -0.310]/err0 | bot_mc_gto.py=+1.423[+2.560 +1.100 +0.610]/err0 errors=0 time=80.2s
+
+Best candidate this generation:
+  score: +1.818
+  min target: -0.390
+  errors: 0
+  details: champion=-0.390[-0.930 +0.200 -0.440]/err0 | bot_mc_gto.py=+4.027[+6.210 +6.240 -0.370]/err0
+
+Not promoted.
+  reason: min target -0.390 < floor -0.350
+
+================================================================================
+GENERATION 2/10
+================================================================================
+gen 02 cand 01/16: score=-0.785 min_target=-0.957 champion=-0.957[-1.830 -1.230 +0.190]/err0 | bot_mc_gto.py=-0.613[+0.450 -2.030 -0.260]/err0 errors=0 time=79.3s
+gen 02 cand 06/16: score=-0.668 min_target=-0.767 champion=-0.570[-0.800 +1.220 -2.130]/err0 | bot_mc_gto.py=-0.767[+0.000 -1.900 -0.400]/err0 errors=0 time=80.9s
+gen 02 cand 03/16: score=+1.470 min_target=-0.820 champion=-0.820[-2.150 +0.130 -0.440]/err0 | bot_mc_gto.py=+3.760[+0.440 +8.850 +1.990]/err0 errors=0 time=82.9s
+gen 02 cand 05/16: score=+0.967 min_target=-1.520 champion=-1.520[-2.110 +0.830 -3.280]/err0 | bot_mc_gto.py=+3.453[+6.090 +0.040 +4.230]/err0 errors=0 time=83.7s
+gen 02 cand 08/16: score=+0.065 min_target=-0.353 champion=+0.483[+0.880 +0.350 +0.220]/err0 | bot_mc_gto.py=-0.353[+1.700 -3.610 +0.850]/err0 errors=0 time=84.4s
+gen 02 cand 07/16: score=-0.630 min_target=-1.157 champion=-0.103[-0.360 +0.700 -0.650]/err0 | bot_mc_gto.py=-1.157[-1.540 +0.130 -2.060]/err0 errors=0 time=84.8s
+gen 02 cand 04/16: score=+0.213 min_target=-0.513 champion=-0.513[+0.900 -1.850 -0.590]/err0 | bot_mc_gto.py=+0.940[+3.540 -0.480 -0.240]/err0 errors=0 time=86.5s
+gen 02 cand 02/16: score=-0.184 min_target=-0.422 champion=-0.422[-0.410 -1.230 +0.375]/err0 | bot_mc_gto.py=+0.053[+0.290 +0.090 -0.220]/err0 errors=0 time=87.2s
+gen 02 cand 09/16: score=-0.576 min_target=-0.650 champion=-0.650[-1.100 -0.490 -0.360]/err0 | bot_mc_gto.py=-0.502[-0.980 -1.795 +1.270]/err0 errors=0 time=74.7s
+gen 02 cand 10/16: score=-0.088 min_target=-0.647 champion=-0.647[-0.010 -0.940 -0.990]/err0 | bot_mc_gto.py=+0.470[+1.710 -2.120 +1.820]/err0 errors=0 time=78.7s
+gen 02 cand 12/16: score=-1.605 min_target=-2.717 champion=-0.493[+0.110 -1.310 -0.280]/err0 | bot_mc_gto.py=-2.717[-3.110 -4.280 -0.760]/err0 errors=0 time=77.4s
+gen 02 cand 13/16: score=+0.413 min_target=+0.123 champion=+0.702[+2.140 +1.020 -1.055]/err0 | bot_mc_gto.py=+0.123[-0.030 -0.020 +0.420]/err0 errors=0 time=78.9s
+gen 02 cand 11/16: score=-2.042 min_target=-2.743 champion=-1.340[-2.620 -0.340 -1.060]/err0 | bot_mc_gto.py=-2.743[-5.300 -2.430 -0.500]/err0 errors=0 time=80.6s
+gen 02 cand 14/16: score=+1.042 min_target=-1.155 champion=-1.155[-1.880 -0.980 -0.605]/err0 | bot_mc_gto.py=+3.240[+9.380 +0.740 -0.400]/err0 errors=0 time=78.8s
+gen 02 cand 16/16: score=-0.642 min_target=-0.727 champion=-0.727[+0.100 -0.190 -2.090]/err0 | bot_mc_gto.py=-0.557[-1.440 -0.500 +0.270]/err0 errors=0 time=77.3s
+gen 02 cand 15/16: score=-0.453 min_target=-0.763 champion=-0.143[-0.890 +0.650 -0.190]/err0 | bot_mc_gto.py=-0.763[+1.990 -1.420 -2.860]/err0 errors=0 time=81.3s
+
+Best candidate this generation:
+  score: +1.470
+  min target: -0.820
+  errors: 0
+  details: champion=-0.820[-2.150 +0.130 -0.440]/err0 | bot_mc_gto.py=+3.760[+0.440 +8.850 +1.990]/err0
+
+Not promoted.
+  reason: min target -0.820 < floor -0.350
+
+================================================================================
+GENERATION 3/10
+================================================================================
+gen 03 cand 04/16: score=+0.788 min_target=+0.627 champion=+0.627[-1.570 +2.050 +1.400]/err0 | bot_mc_gto.py=+0.950[-0.420 +0.090 +3.180]/err0 errors=0 time=78.9s
+gen 03 cand 01/16: score=+1.091 min_target=+0.620 champion=+0.620[-1.260 +1.770 +1.350]/err0 | bot_mc_gto.py=+1.562[+2.230 +1.290 +1.165]/err0 errors=0 time=83.2s
+gen 03 cand 03/16: score=-1.411 min_target=-1.725 champion=-1.725[-3.065 -1.110 -1.000]/err0 | bot_mc_gto.py=-1.097[-2.590 +0.720 -1.420]/err0 errors=0 time=84.9s
+gen 03 cand 05/16: score=-0.847 min_target=-0.937 champion=-0.937[+0.570 -1.270 -2.110]/err0 | bot_mc_gto.py=-0.757[+0.000 -1.480 -0.790]/err0 errors=0 time=85.1s
+gen 03 cand 06/16: score=+2.237 min_target=+0.890 champion=+0.890[+1.620 +1.970 -0.920]/err0 | bot_mc_gto.py=+3.583[+7.260 +2.350 +1.140]/err0 errors=0 time=85.1s
+gen 03 cand 07/16: score=-0.408 min_target=-0.507 champion=-0.310[-1.650 -0.380 +1.100]/err0 | bot_mc_gto.py=-0.507[-2.240 -0.060 +0.780]/err0 errors=0 time=86.2s
+gen 03 cand 08/16: score=-0.193 min_target=-0.243 champion=-0.143[-1.040 +0.810 -0.200]/err0 | bot_mc_gto.py=-0.243[-1.170 +0.590 -0.150]/err0 errors=0 time=87.7s
+gen 03 cand 02/16: score=-0.592 min_target=-1.067 champion=-0.117[-0.360 -1.260 +1.270]/err0 | bot_mc_gto.py=-1.067[-2.800 -1.080 +0.680]/err0 errors=0 time=88.1s
+gen 03 cand 10/16: score=-0.317 min_target=-0.592 champion=-0.592[-1.850 +0.310 -0.235]/err0 | bot_mc_gto.py=-0.042[+1.070 -1.345 +0.150]/err0 errors=0 time=77.0s
+gen 03 cand 09/16: score=-1.118 min_target=-1.687 champion=-1.687[-4.050 -1.150 +0.140]/err0 | bot_mc_gto.py=-0.550[-3.000 +0.730 +0.620]/err0 errors=0 time=84.8s
+gen 03 cand 12/16: score=+0.485 min_target=+0.197 champion=+0.197[-1.500 +0.710 +1.380]/err0 | bot_mc_gto.py=+0.773[+2.290 -0.030 +0.060]/err0 errors=0 time=78.7s
+gen 03 cand 14/16: score=-0.215 min_target=-0.677 champion=+0.247[+1.030 -0.630 +0.340]/err0 | bot_mc_gto.py=-0.677[+3.390 -2.500 -2.920]/err0 errors=0 time=79.5s
+gen 03 cand 16/16: score=+1.097 min_target=+0.757 champion=+1.437[+1.000 +3.460 -0.150]/err0 | bot_mc_gto.py=+0.757[+0.990 +1.480 -0.200]/err0 errors=0 time=78.1s
+gen 03 cand 13/16: score=-0.068 min_target=-0.298 champion=+0.163[+0.370 -0.200 +0.320]/err0 | bot_mc_gto.py=-0.298[-2.360 +1.690 -0.225]/err0 errors=0 time=82.5s
+gen 03 cand 11/16: score=+1.323 min_target=-0.252 champion=-0.252[-0.400 +0.335 -0.690]/err0 | bot_mc_gto.py=+2.897[+8.480 +0.920 -0.710]/err0 errors=0 time=84.1s
+gen 03 cand 15/16: score=+0.327 min_target=+0.070 champion=+0.583[+0.940 +1.530 -0.720]/err0 | bot_mc_gto.py=+0.070[+1.960 -0.640 -1.110]/err0 errors=0 time=82.7s
+
+Best candidate this generation:
+  score: +2.237
+  min target: +0.890
+  errors: 0
+  details: champion=+0.890[+1.620 +1.970 -0.920]/err0 | bot_mc_gto.py=+3.583[+7.260 +2.350 +1.140]/err0
+
+PROMOTING candidate to champion.
+
+Saved params to tuned_params.json
+
+New champion PARAMS:
+PARAMS = {
+    "base_call_margin": 0.023883,
+    "committed_margin_multiplier": 0.212260,
+    "fallback_call_price": 0.226024,
+    "flop_uncertainty_margin": 0.012310,
+    "fold_rate_half_discount": 0.063460,
+    "fold_rate_pot_discount": 0.045492,
+    "fold_rate_reference": 0.244240,
+    "half_raise_extra_edge": 0.081624,
+    "loose_raise_bonus": 0.038808,
+    "postflop_button_bonus": 0.015853,
+    "postflop_half_threshold": 0.471649,
+    "postflop_oop_penalty": 0.008145,
+    "postflop_pot_threshold": 0.570612,
+    "pot_raise_extra_margin": 0.014878,
+    "preflop_half_threshold": 0.463404,
+    "preflop_pot_threshold": 0.591453,
+    "preflop_uncertainty_margin": 0.006141,
+    "raise_count_margin": 0.011687,
+    "randomization": 0.003515,
+    "river_uncertainty_margin": 0.001207,
+    "short_stack_aggression_bonus": 0.020825,
+    "tight_raise_penalty": 0.224041,
+    "tight_raise_reference": 0.625372,
+    "turn_uncertainty_margin": 0.004817,
+}
+
+================================================================================
+GENERATION 4/10
+================================================================================
+gen 04 cand 08/20: score=-0.645 min_target=-1.120 champion=-0.170[+0.920 +0.640 -2.070]/err0 | bot_mc_gto.py=-1.120[-2.060 -1.130 -0.170]/err0 errors=0 time=80.9s
+gen 04 cand 05/20: score=+0.856 min_target=+0.253 champion=+0.253[+0.920 -1.620 +1.460]/err0 | bot_mc_gto.py=+1.458[+5.220 +0.950 -1.795]/err0 errors=0 time=82.1s
+gen 04 cand 04/20: score=+3.174 min_target=+0.108 champion=+0.108[+0.320 -1.445 +1.450]/err0 | bot_mc_gto.py=+6.240[+6.840 +7.120 +4.760]/err0 errors=0 time=84.4s
+gen 04 cand 06/20: score=+3.158 min_target=+1.100 champion=+1.100[+3.600 -0.040 -0.260]/err0 | bot_mc_gto.py=+5.217[+8.690 +5.010 +1.950]/err0 errors=0 time=84.9s
+gen 04 cand 01/20: score=+0.255 min_target=-0.277 champion=+0.787[+0.370 +1.050 +0.940]/err0 | bot_mc_gto.py=-0.277[+1.440 -0.580 -1.690]/err0 errors=0 time=85.0s
+gen 04 cand 03/20: score=-0.351 min_target=-0.773 champion=-0.773[-1.240 +0.690 -1.770]/err0 | bot_mc_gto.py=+0.072[-1.790 -0.980 +2.985]/err0 errors=0 time=85.0s
+gen 04 cand 07/20: score=-1.095 min_target=-1.427 champion=-1.427[-4.120 -1.120 +0.960]/err0 | bot_mc_gto.py=-0.763[+0.840 -0.570 -2.560]/err0 errors=0 time=86.5s
+gen 04 cand 02/20: score=-0.389 min_target=-0.692 champion=-0.087[-1.980 +0.980 +0.740]/err0 | bot_mc_gto.py=-0.692[-0.460 -1.195 -0.420]/err0 errors=0 time=86.8s
+gen 04 cand 09/20: score=+1.105 min_target=+0.007 champion=+0.007[+0.690 +0.730 -1.400]/err0 | bot_mc_gto.py=+2.203[+3.790 +2.670 +0.150]/err0 errors=0 time=79.3s
+gen 04 cand 10/20: score=-0.242 min_target=-0.460 champion=-0.025[-0.830 +0.465 +0.290]/err0 | bot_mc_gto.py=-0.460[-0.880 -0.750 +0.250]/err0 errors=0 time=78.4s
+gen 04 cand 11/20: score=+1.520 min_target=-0.380 champion=-0.380[-0.400 -0.470 -0.270]/err0 | bot_mc_gto.py=+3.420[+4.380 +4.890 +0.990]/err0 errors=0 time=78.2s
+gen 04 cand 14/20: score=+0.618 min_target=-0.317 champion=-0.317[-1.110 -0.030 +0.190]/err0 | bot_mc_gto.py=+1.553[+3.660 +1.750 -0.750]/err0 errors=0 time=80.2s
+gen 04 cand 12/20: score=+2.317 min_target=-0.923 champion=-0.923[-1.310 +0.460 -1.920]/err0 | bot_mc_gto.py=+5.557[+4.990 +8.270 +3.410]/err0 errors=0 time=81.2s
+gen 04 cand 13/20: score=+1.232 min_target=-1.937 champion=-1.937[-1.590 -3.230 -0.990]/err0 | bot_mc_gto.py=+4.400[+7.490 +3.880 +1.830]/err0 errors=0 time=81.3s
+gen 04 cand 15/20: score=-0.118 min_target=-0.840 champion=+0.603[+0.590 +1.470 -0.250]/err0 | bot_mc_gto.py=-0.840[+1.530 -2.230 -1.820]/err0 errors=0 time=81.3s
+gen 04 cand 16/20: score=+1.002 min_target=-1.423 champion=-1.423[-2.820 -1.150 -0.300]/err0 | bot_mc_gto.py=+3.427[+3.560 +5.090 +1.630]/err0 errors=0 time=81.3s
+gen 04 cand 17/20: score=+1.042 min_target=-0.613 champion=-0.613[-0.510 -0.750 -0.580]/err0 | bot_mc_gto.py=+2.697[+5.750 +1.760 +0.580]/err0 errors=0 time=72.9s
+gen 04 cand 18/20: score=+0.839 min_target=-1.223 champion=-1.223[+0.030 -1.820 -1.880]/err0 | bot_mc_gto.py=+2.902[+5.570 +0.935 +2.200]/err0 errors=0 time=75.8s
+gen 04 cand 19/20: score=+0.296 min_target=-1.563 champion=-1.563[-2.280 -0.520 -1.890]/err0 | bot_mc_gto.py=+2.155[+3.700 +2.560 +0.205]/err0 errors=0 time=77.5s
+gen 04 cand 20/20: score=-0.132 min_target=-0.373 champion=-0.373[+0.410 +0.130 -1.660]/err0 | bot_mc_gto.py=+0.110[+0.540 -0.600 +0.390]/err0 errors=0 time=77.8s
+
+Best candidate this generation:
+  score: +3.174
+  min target: +0.108
+  errors: 0
+  details: champion=+0.108[+0.320 -1.445 +1.450]/err0 | bot_mc_gto.py=+6.240[+6.840 +7.120 +4.760]/err0
+
+PROMOTING candidate to champion.
+
+Saved params to tuned_params.json
+
+New champion PARAMS:
+PARAMS = {
+    "base_call_margin": 0.023883,
+    "committed_margin_multiplier": 0.212260,
+    "fallback_call_price": 0.234527,
+    "flop_uncertainty_margin": 0.012399,
+    "fold_rate_half_discount": 0.074638,
+    "fold_rate_pot_discount": 0.045492,
+    "fold_rate_reference": 0.274229,
+    "half_raise_extra_edge": 0.076448,
+    "loose_raise_bonus": 0.038808,
+    "postflop_button_bonus": 0.017076,
+    "postflop_half_threshold": 0.497685,
+    "postflop_oop_penalty": 0.009097,
+    "postflop_pot_threshold": 0.457564,
+    "pot_raise_extra_margin": 0.015295,
+    "preflop_half_threshold": 0.463404,
+    "preflop_pot_threshold": 0.591453,
+    "preflop_uncertainty_margin": 0.005849,
+    "raise_count_margin": 0.011687,
+    "randomization": 0.003627,
+    "river_uncertainty_margin": 0.001036,
+    "short_stack_aggression_bonus": 0.020825,
+    "tight_raise_penalty": 0.198614,
+    "tight_raise_reference": 0.645601,
+    "turn_uncertainty_margin": 0.004817,
+}
+
+================================================================================
+GENERATION 5/10
+================================================================================
+gen 05 cand 07/20: score=-0.116 min_target=-0.137 champion=-0.137[-0.330 -0.240 +0.160]/err0 | bot_mc_gto.py=-0.095[+3.790 -2.040 -2.035]/err0 errors=0 time=78.3s
+gen 05 cand 04/20: score=-0.073 min_target=-1.503 champion=-1.503[-4.100 +0.410 -0.820]/err0 | bot_mc_gto.py=+1.357[-0.020 +3.090 +1.000]/err0 errors=0 time=78.6s
+gen 05 cand 06/20: score=+1.860 min_target=+0.373 champion=+0.373[-0.660 +1.380 +0.400]/err0 | bot_mc_gto.py=+3.347[+6.960 +3.200 -0.120]/err0 errors=0 time=80.9s
+gen 05 cand 05/20: score=+2.277 min_target=-0.237 champion=-0.237[-1.920 -0.560 +1.770]/err0 | bot_mc_gto.py=+4.790[+3.580 +7.680 +3.110]/err0 errors=0 time=81.8s
+gen 05 cand 08/20: score=+2.428 min_target=-0.480 champion=-0.480[+0.320 +0.480 -2.240]/err0 | bot_mc_gto.py=+5.337[+6.340 +8.320 +1.350]/err0 errors=0 time=82.1s
+gen 05 cand 01/20: score=+0.253 min_target=-1.483 champion=-1.483[-2.830 -0.810 -0.810]/err0 | bot_mc_gto.py=+1.990[+2.590 +2.880 +0.500]/err0 errors=0 time=82.3s
+gen 05 cand 03/20: score=+1.067 min_target=-0.377 champion=-0.377[-1.800 +1.770 -1.100]/err0 | bot_mc_gto.py=+2.510[+5.040 +0.280 +2.210]/err0 errors=0 time=83.9s
+gen 05 cand 02/20: score=+0.185 min_target=-1.177 champion=-1.177[-1.640 -0.890 -1.000]/err0 | bot_mc_gto.py=+1.547[+2.140 +0.060 +2.440]/err0 errors=0 time=84.0s
+gen 05 cand 09/20: score=-0.588 min_target=-1.267 champion=-1.267[-3.580 -0.710 +0.490]/err0 | bot_mc_gto.py=+0.090[+2.710 -1.110 -1.330]/err0 errors=0 time=74.6s
+gen 05 cand 12/20: score=+0.312 min_target=+0.113 champion=+0.113[+0.330 +0.630 -0.620]/err0 | bot_mc_gto.py=+0.510[+1.070 +0.390 +0.070]/err0 errors=0 time=76.2s
+gen 05 cand 10/20: score=+1.835 min_target=-1.073 champion=-1.073[-1.650 +0.250 -1.820]/err0 | bot_mc_gto.py=+4.743[+7.100 +5.930 +1.200]/err0 errors=0 time=80.1s
+gen 05 cand 11/20: score=-0.079 min_target=-0.368 champion=+0.210[+0.050 +1.040 -0.460]/err0 | bot_mc_gto.py=-0.368[-0.050 -1.020 -0.035]/err0 errors=0 time=78.4s
+gen 05 cand 16/20: score=+2.331 min_target=+0.702 champion=+0.702[+1.770 +0.800 -0.465]/err0 | bot_mc_gto.py=+3.960[+7.150 +2.330 +2.400]/err0 errors=0 time=78.2s
+gen 05 cand 14/20: score=+2.267 min_target=-1.533 champion=-1.533[-0.760 -2.580 -1.260]/err0 | bot_mc_gto.py=+6.067[+5.020 +6.740 +6.440]/err0 errors=0 time=80.0s
+gen 05 cand 13/20: score=+1.676 min_target=-0.945 champion=-0.945[+0.270 -1.560 -1.545]/err0 | bot_mc_gto.py=+4.297[+6.240 +3.890 +2.760]/err0 errors=0 time=80.2s
+gen 05 cand 15/20: score=+2.597 min_target=-0.477 champion=-0.477[-0.740 -0.930 +0.240]/err0 | bot_mc_gto.py=+5.670[+8.960 +2.770 +5.280]/err0 errors=0 time=78.5s
+gen 05 cand 17/20: score=-0.275 min_target=-1.680 champion=-1.680[-1.630 -1.540 -1.870]/err0 | bot_mc_gto.py=+1.130[-0.670 +2.540 +1.520]/err0 errors=0 time=75.4s
+gen 05 cand 19/20: score=+0.082 min_target=-0.173 champion=-0.173[-0.390 +0.050 -0.180]/err0 | bot_mc_gto.py=+0.337[+1.010 +0.710 -0.710]/err0 errors=0 time=71.0s
+gen 05 cand 18/20: score=+0.728 min_target=-0.390 champion=-0.390[+0.620 -1.100 -0.690]/err0 | bot_mc_gto.py=+1.847[+2.480 +0.370 +2.690]/err0 errors=0 time=73.7s
+gen 05 cand 20/20: score=+2.162 min_target=+0.590 champion=+0.590[-0.430 +1.370 +0.830]/err0 | bot_mc_gto.py=+3.733[+8.370 -0.960 +3.790]/err0 errors=0 time=75.0s
+
+Best candidate this generation:
+  score: +2.597
+  min target: -0.477
+  errors: 0
+  details: champion=-0.477[-0.740 -0.930 +0.240]/err0 | bot_mc_gto.py=+5.670[+8.960 +2.770 +5.280]/err0
+
+Not promoted.
+  reason: min target -0.477 < floor -0.350
+
+================================================================================
+GENERATION 6/10
+================================================================================
+gen 06 cand 05/20: score=+0.403 min_target=-0.120 champion=-0.120[-0.160 -0.440 +0.240]/err0 | bot_mc_gto.py=+0.927[+1.590 +1.300 -0.110]/err0 errors=0 time=83.5s
+gen 06 cand 06/20: score=-0.981 min_target=-1.402 champion=-0.560[-1.270 +0.420 -0.830]/err0 | bot_mc_gto.py=-1.402[-1.360 -0.560 -2.285]/err0 errors=0 time=83.9s
+gen 06 cand 02/20: score=+0.636 min_target=-0.065 champion=-0.065[-1.120 +0.770 +0.155]/err0 | bot_mc_gto.py=+1.337[+0.370 +3.760 -0.120]/err0 errors=0 time=85.6s
+gen 06 cand 08/20: score=+2.590 min_target=-0.117 champion=-0.117[+0.860 +0.790 -2.000]/err0 | bot_mc_gto.py=+5.297[+11.200 +0.030 +4.660]/err0 errors=0 time=86.5s
+gen 06 cand 03/20: score=+2.675 min_target=+0.680 champion=+0.680[+0.850 +1.980 -0.790]/err0 | bot_mc_gto.py=+4.670[+3.900 +4.970 +5.140]/err0 errors=0 time=86.6s
+gen 06 cand 01/20: score=+3.334 min_target=+0.858 champion=+0.858[+0.330 +0.530 +1.715]/err0 | bot_mc_gto.py=+5.810[+8.070 +3.560 +5.800]/err0 errors=0 time=86.8s
+gen 06 cand 07/20: score=+2.552 min_target=+0.810 champion=+0.810[+2.560 +0.270 -0.400]/err0 | bot_mc_gto.py=+4.293[+7.500 +1.480 +3.900]/err0 errors=0 time=86.8s
+gen 06 cand 04/20: score=+2.061 min_target=+0.027 champion=+0.027[-0.080 +1.500 -1.340]/err0 | bot_mc_gto.py=+4.095[+8.240 +2.010 +2.035]/err0 errors=0 time=86.9s
+gen 06 cand 13/20: score=-0.492 min_target=-0.770 champion=-0.770[+0.680 -1.820 -1.170]/err0 | bot_mc_gto.py=-0.213[-1.150 +0.260 +0.250]/err0 errors=0 time=70.6s
+gen 06 cand 09/20: score=-0.269 min_target=-0.803 champion=+0.265[+2.150 -0.480 -0.875]/err0 | bot_mc_gto.py=-0.803[-0.020 -0.290 -2.100]/err0 errors=0 time=74.0s
+gen 06 cand 10/20: score=+0.795 min_target=-0.233 champion=-0.233[+0.490 -0.390 -0.800]/err0 | bot_mc_gto.py=+1.823[+2.450 -1.090 +4.110]/err0 errors=0 time=76.4s
+gen 06 cand 12/20: score=+3.515 min_target=+0.548 champion=+0.548[+0.675 +0.390 +0.580]/err0 | bot_mc_gto.py=+6.482[+10.660 +6.120 +2.665]/err0 errors=0 time=75.9s
+gen 06 cand 16/20: score=+1.821 min_target=-0.032 champion=-0.032[-1.140 +0.080 +0.965]/err0 | bot_mc_gto.py=+3.673[+4.050 +4.660 +2.310]/err0 errors=0 time=77.6s
+gen 06 cand 14/20: score=+1.338 min_target=+0.110 champion=+0.110[-0.720 +1.660 -0.610]/err0 | bot_mc_gto.py=+2.567[+6.100 -0.470 +2.070]/err0 errors=0 time=77.8s
+gen 06 cand 11/20: score=-0.083 min_target=-0.323 champion=-0.323[-1.140 +0.710 -0.540]/err0 | bot_mc_gto.py=+0.157[+0.210 -0.840 +1.100]/err0 errors=0 time=80.2s
+gen 06 cand 15/20: score=-1.090 min_target=-1.207 champion=-0.973[-2.560 +0.190 -0.550]/err0 | bot_mc_gto.py=-1.207[+0.140 -1.800 -1.960]/err0 errors=0 time=80.0s
+gen 06 cand 18/20: score=-0.540 min_target=-0.893 champion=-0.187[-0.600 +1.450 -1.410]/err0 | bot_mc_gto.py=-0.893[-2.960 +1.770 -1.490]/err0 errors=0 time=66.4s
+gen 06 cand 17/20: score=+2.320 min_target=-0.123 champion=-0.123[+0.820 -0.210 -0.980]/err0 | bot_mc_gto.py=+4.763[+8.690 +4.730 +0.870]/err0 errors=0 time=73.0s
+gen 06 cand 19/20: score=+2.677 min_target=-0.153 champion=-0.153[-0.170 +0.600 -0.890]/err0 | bot_mc_gto.py=+5.507[+7.770 +5.860 +2.890]/err0 errors=0 time=72.6s
+gen 06 cand 20/20: score=-0.323 min_target=-0.687 champion=+0.040[-2.640 +1.320 +1.440]/err0 | bot_mc_gto.py=-0.687[-1.210 +0.100 -0.950]/err0 errors=0 time=73.8s
+
+Best candidate this generation:
+  score: +3.515
+  min target: +0.548
+  errors: 0
+  details: champion=+0.548[+0.675 +0.390 +0.580]/err0 | bot_mc_gto.py=+6.482[+10.660 +6.120 +2.665]/err0
+
+PROMOTING candidate to champion.
+
+Saved params to tuned_params.json
+
+New champion PARAMS:
+PARAMS = {
+    "base_call_margin": 0.023883,
+    "committed_margin_multiplier": 0.212260,
+    "fallback_call_price": 0.234527,
+    "flop_uncertainty_margin": 0.012399,
+    "fold_rate_half_discount": 0.074638,
+    "fold_rate_pot_discount": 0.045492,
+    "fold_rate_reference": 0.231503,
+    "half_raise_extra_edge": 0.066926,
+    "loose_raise_bonus": 0.038808,
+    "postflop_button_bonus": 0.017076,
+    "postflop_half_threshold": 0.475104,
+    "postflop_oop_penalty": 0.007359,
+    "postflop_pot_threshold": 0.454747,
+    "pot_raise_extra_margin": 0.016597,
+    "preflop_half_threshold": 0.463404,
+    "preflop_pot_threshold": 0.591453,
+    "preflop_uncertainty_margin": 0.005849,
+    "raise_count_margin": 0.012046,
+    "randomization": 0.003382,
+    "river_uncertainty_margin": 0.000978,
+    "short_stack_aggression_bonus": 0.020825,
+    "tight_raise_penalty": 0.198614,
+    "tight_raise_reference": 0.756517,
+    "turn_uncertainty_margin": 0.003955,
+}
+
+================================================================================
+GENERATION 7/10
+================================================================================
+gen 07 cand 03/20: score=-0.386 min_target=-0.768 champion=-0.003[-1.400 -1.570 +2.960]/err0 | bot_mc_gto.py=-0.768[-0.690 +1.075 -2.690]/err0 errors=0 time=76.3s
+gen 07 cand 04/20: score=+0.415 min_target=-0.740 champion=-0.740[-0.090 -1.760 -0.370]/err0 | bot_mc_gto.py=+1.570[+2.910 +1.700 +0.100]/err0 errors=0 time=78.6s
+gen 07 cand 08/20: score=+1.646 min_target=+1.580 champion=+1.580[-0.320 +1.870 +3.190]/err0 | bot_mc_gto.py=+1.712[+2.820 +2.050 +0.265]/err0 errors=0 time=79.0s
+gen 07 cand 01/20: score=+1.175 min_target=-0.033 champion=-0.033[+0.590 -0.070 -0.620]/err0 | bot_mc_gto.py=+2.383[+1.240 +8.980 -3.070]/err0 errors=0 time=81.7s
+gen 07 cand 06/20: score=+0.903 min_target=+0.093 champion=+0.093[-1.030 +0.040 +1.270]/err0 | bot_mc_gto.py=+1.713[+2.040 +0.550 +2.550]/err0 errors=0 time=83.7s
+gen 07 cand 05/20: score=+0.882 min_target=-0.273 champion=-0.273[-0.090 -1.230 +0.500]/err0 | bot_mc_gto.py=+2.037[+3.160 +1.060 +1.890]/err0 errors=0 time=84.1s
+gen 07 cand 02/20: score=+1.123 min_target=-1.213 champion=-1.213[-2.720 -0.150 -0.770]/err0 | bot_mc_gto.py=+3.460[+3.620 +4.980 +1.780]/err0 errors=0 time=85.0s
+gen 07 cand 07/20: score=+4.638 min_target=+0.933 champion=+0.933[+1.120 +0.310 +1.370]/err0 | bot_mc_gto.py=+8.343[+12.230 +7.550 +5.250]/err0 errors=0 time=85.1s
+gen 07 cand 09/20: score=+0.551 min_target=+0.150 champion=+0.150[+0.370 +1.290 -1.210]/err0 | bot_mc_gto.py=+0.952[-1.550 +3.420 +0.985]/err0 errors=0 time=76.7s
+gen 07 cand 10/20: score=+3.697 min_target=-0.120 champion=-0.120[+0.340 -0.380 -0.320]/err0 | bot_mc_gto.py=+7.513[+10.240 +7.440 +4.860]/err0 errors=0 time=76.4s
+gen 07 cand 12/20: score=+3.197 min_target=-0.880 champion=-0.880[+0.000 -0.140 -2.500]/err0 | bot_mc_gto.py=+7.273[+11.140 +5.640 +5.040]/err0 errors=0 time=76.1s
+gen 07 cand 11/20: score=+1.832 min_target=-0.500 champion=-0.500[-0.600 -0.530 -0.370]/err0 | bot_mc_gto.py=+4.163[+7.600 +1.450 +3.440]/err0 errors=0 time=79.3s
+gen 07 cand 13/20: score=+3.404 min_target=-0.555 champion=-0.555[-2.030 -0.575 +0.940]/err0 | bot_mc_gto.py=+7.363[+11.150 +6.840 +4.100]/err0 errors=0 time=76.3s
+gen 07 cand 15/20: score=+1.287 min_target=+0.900 champion=+0.900[+0.150 +1.770 +0.780]/err0 | bot_mc_gto.py=+1.673[+3.370 +2.480 -0.830]/err0 errors=0 time=76.1s
+gen 07 cand 14/20: score=+1.597 min_target=-0.037 champion=-0.037[-1.010 +1.130 -0.230]/err0 | bot_mc_gto.py=+3.230[+2.360 +4.240 +3.090]/err0 errors=0 time=78.0s
+gen 07 cand 16/20: score=+3.478 min_target=+0.067 champion=+0.067[-1.320 +0.540 +0.980]/err0 | bot_mc_gto.py=+6.890[+8.900 +7.820 +3.950]/err0 errors=0 time=77.6s
+gen 07 cand 17/20: score=+2.247 min_target=-1.507 champion=-1.507[-1.350 -2.330 -0.840]/err0 | bot_mc_gto.py=+6.000[+7.060 +5.490 +5.450]/err0 errors=0 time=72.3s
+gen 07 cand 18/20: score=+0.282 min_target=+0.230 champion=+0.230[+1.060 -1.850 +1.480]/err0 | bot_mc_gto.py=+0.333[-1.190 +2.500 -0.310]/err0 errors=0 time=71.8s
+gen 07 cand 20/20: score=+2.210 min_target=+0.757 champion=+0.757[+0.090 +0.680 +1.500]/err0 | bot_mc_gto.py=+3.663[+7.790 +4.110 -0.910]/err0 errors=0 time=68.6s
+gen 07 cand 19/20: score=+0.057 min_target=-0.522 champion=-0.522[-2.880 +2.230 -0.915]/err0 | bot_mc_gto.py=+0.637[+2.040 +1.410 -1.540]/err0 errors=0 time=76.2s
+
+Best candidate this generation:
+  score: +4.638
+  min target: +0.933
+  errors: 0
+  details: champion=+0.933[+1.120 +0.310 +1.370]/err0 | bot_mc_gto.py=+8.343[+12.230 +7.550 +5.250]/err0
+
+PROMOTING candidate to champion.
+
+Saved params to tuned_params.json
+
+New champion PARAMS:
+PARAMS = {
+    "base_call_margin": 0.026444,
+    "committed_margin_multiplier": 0.252575,
+    "fallback_call_price": 0.217775,
+    "flop_uncertainty_margin": 0.012399,
+    "fold_rate_half_discount": 0.068222,
+    "fold_rate_pot_discount": 0.036598,
+    "fold_rate_reference": 0.231503,
+    "half_raise_extra_edge": 0.055261,
+    "loose_raise_bonus": 0.038808,
+    "postflop_button_bonus": 0.018066,
+    "postflop_half_threshold": 0.417078,
+    "postflop_oop_penalty": 0.006199,
+    "postflop_pot_threshold": 0.454747,
+    "pot_raise_extra_margin": 0.016597,
+    "preflop_half_threshold": 0.463639,
+    "preflop_pot_threshold": 0.591453,
+    "preflop_uncertainty_margin": 0.004936,
+    "raise_count_margin": 0.013011,
+    "randomization": 0.003220,
+    "river_uncertainty_margin": 0.000953,
+    "short_stack_aggression_bonus": 0.018605,
+    "tight_raise_penalty": 0.198614,
+    "tight_raise_reference": 0.721608,
+    "turn_uncertainty_margin": 0.004022,
+}
+
+================================================================================
+GENERATION 8/10
+================================================================================
+gen 08 cand 03/20: score=+0.998 min_target=+0.803 champion=+0.803[+1.280 -0.270 +1.400]/err0 | bot_mc_gto.py=+1.193[-0.300 +4.300 -0.420]/err0 errors=0 time=80.3s
+gen 08 cand 06/20: score=+2.740 min_target=-0.330 champion=-0.330[+0.130 -0.910 -0.210]/err0 | bot_mc_gto.py=+5.810[+8.260 +7.580 +1.590]/err0 errors=0 time=81.5s
+gen 08 cand 05/20: score=+0.984 min_target=-1.208 champion=-1.208[-3.420 +1.095 -1.300]/err0 | bot_mc_gto.py=+3.177[+2.650 +6.350 +0.530]/err0 errors=0 time=81.8s
+gen 08 cand 07/20: score=+3.125 min_target=+0.017 champion=+0.017[-0.820 +2.320 -1.450]/err0 | bot_mc_gto.py=+6.233[+8.880 +5.910 +3.910]/err0 errors=0 time=82.7s
+gen 08 cand 04/20: score=+4.213 min_target=-0.283 champion=-0.283[+0.840 -0.530 -1.160]/err0 | bot_mc_gto.py=+8.710[+11.390 +9.210 +5.530]/err0 errors=0 time=82.9s
+gen 08 cand 02/20: score=+3.047 min_target=+0.287 champion=+0.287[+0.130 -0.030 +0.760]/err0 | bot_mc_gto.py=+5.807[+9.640 +5.690 +2.090]/err0 errors=0 time=84.5s
+gen 08 cand 08/20: score=+0.732 min_target=-0.967 champion=-0.967[-1.980 -1.040 +0.120]/err0 | bot_mc_gto.py=+2.430[+3.630 +1.670 +1.990]/err0 errors=0 time=84.8s
+gen 08 cand 01/20: score=+2.147 min_target=-1.663 champion=-1.663[-1.490 -2.520 -0.980]/err0 | bot_mc_gto.py=+5.957[+8.720 +7.280 +1.870]/err0 errors=0 time=84.8s
+gen 08 cand 10/20: score=+0.015 min_target=-0.183 champion=+0.213[+0.460 +0.660 -0.480]/err0 | bot_mc_gto.py=-0.183[+0.450 +1.120 -2.120]/err0 errors=0 time=69.3s
+gen 08 cand 15/20: score=+0.230 min_target=-0.360 champion=-0.360[-0.520 +0.240 -0.800]/err0 | bot_mc_gto.py=+0.820[+2.960 +1.910 -2.410]/err0 errors=0 time=71.0s
+gen 08 cand 13/20: score=+3.704 min_target=+0.410 champion=+0.410[+0.970 +0.290 -0.030]/err0 | bot_mc_gto.py=+6.998[+9.620 +8.310 +3.065]/err0 errors=0 time=75.1s
+gen 08 cand 11/20: score=+2.590 min_target=-0.143 champion=-0.143[+0.440 -0.160 -0.710]/err0 | bot_mc_gto.py=+5.323[+5.640 +5.640 +4.690]/err0 errors=0 time=76.9s
+gen 08 cand 12/20: score=+2.537 min_target=+0.277 champion=+0.277[-0.180 +1.130 -0.120]/err0 | bot_mc_gto.py=+4.797[+4.300 +7.590 +2.500]/err0 errors=0 time=76.7s
+gen 08 cand 09/20: score=+3.235 min_target=+0.067 champion=+0.067[+0.250 +0.010 -0.060]/err0 | bot_mc_gto.py=+6.403[+11.200 +6.220 +1.790]/err0 errors=0 time=79.4s
+gen 08 cand 14/20: score=+0.640 min_target=-0.250 champion=-0.250[-2.380 +2.620 -0.990]/err0 | bot_mc_gto.py=+1.530[+1.810 +2.450 +0.330]/err0 errors=0 time=78.3s
+gen 08 cand 16/20: score=+2.473 min_target=+0.087 champion=+0.087[-0.810 +0.570 +0.500]/err0 | bot_mc_gto.py=+4.860[+5.540 +5.040 +4.000]/err0 errors=0 time=78.0s
+gen 08 cand 17/20: score=-0.185 min_target=-0.192 champion=-0.192[-0.930 +0.090 +0.265]/err0 | bot_mc_gto.py=-0.178[+1.370 -0.775 -1.130]/err0 errors=0 time=72.0s
+gen 08 cand 18/20: score=+1.078 min_target=+0.865 champion=+0.865[-1.920 +3.470 +1.045]/err0 | bot_mc_gto.py=+1.290[+2.850 +0.620 +0.400]/err0 errors=0 time=70.5s
+gen 08 cand 20/20: score=+1.657 min_target=+0.548 champion=+0.548[-0.120 +1.450 +0.315]/err0 | bot_mc_gto.py=+2.767[+2.530 +3.230 +2.540]/err0 errors=0 time=73.1s
+gen 08 cand 19/20: score=+1.247 min_target=-1.813 champion=-1.813[-4.000 -0.770 -0.670]/err0 | bot_mc_gto.py=+4.307[+3.840 +5.630 +3.450]/err0 errors=0 time=75.0s
+
+Best candidate this generation:
+  score: +4.213
+  min target: -0.283
+  errors: 0
+  details: champion=-0.283[+0.840 -0.530 -1.160]/err0 | bot_mc_gto.py=+8.710[+11.390 +9.210 +5.530]/err0
+
+PROMOTING candidate to champion.
+
+Saved params to tuned_params.json
+
+New champion PARAMS:
+PARAMS = {
+    "base_call_margin": 0.023709,
+    "committed_margin_multiplier": 0.244025,
+    "fallback_call_price": 0.210654,
+    "flop_uncertainty_margin": 0.012965,
+    "fold_rate_half_discount": 0.068222,
+    "fold_rate_pot_discount": 0.042842,
+    "fold_rate_reference": 0.231427,
+    "half_raise_extra_edge": 0.055261,
+    "loose_raise_bonus": 0.043463,
+    "postflop_button_bonus": 0.019985,
+    "postflop_half_threshold": 0.417078,
+    "postflop_oop_penalty": 0.007029,
+    "postflop_pot_threshold": 0.454747,
+    "pot_raise_extra_margin": 0.018849,
+    "preflop_half_threshold": 0.471320,
+    "preflop_pot_threshold": 0.579924,
+    "preflop_uncertainty_margin": 0.005377,
+    "raise_count_margin": 0.013062,
+    "randomization": 0.003398,
+    "river_uncertainty_margin": 0.000891,
+    "short_stack_aggression_bonus": 0.020559,
+    "tight_raise_penalty": 0.198614,
+    "tight_raise_reference": 0.827879,
+    "turn_uncertainty_margin": 0.003347,
+}
+
+================================================================================
+GENERATION 9/10
+================================================================================
+gen 09 cand 02/20: score=-0.033 min_target=-1.187 champion=+1.120[+1.360 +1.660 +0.340]/err0 | bot_mc_gto.py=-1.187[+0.380 -1.160 -2.780]/err0 errors=0 time=78.4s
+gen 09 cand 01/20: score=+2.818 min_target=-0.343 champion=-0.343[-1.510 +0.040 +0.440]/err0 | bot_mc_gto.py=+5.980[+9.780 +7.490 +0.670]/err0 errors=0 time=80.2s
+gen 09 cand 04/20: score=+0.470 min_target=-0.993 champion=-0.993[-1.650 -0.330 -1.000]/err0 | bot_mc_gto.py=+1.933[+2.040 +6.630 -2.870]/err0 errors=0 time=80.9s
+gen 09 cand 07/20: score=+2.938 min_target=-1.293 champion=-1.293[-1.160 -1.390 -1.330]/err0 | bot_mc_gto.py=+7.170[+9.150 +7.300 +5.060]/err0 errors=0 time=81.0s
+gen 09 cand 03/20: score=+1.582 min_target=-1.657 champion=-1.657[-3.790 -0.370 -0.810]/err0 | bot_mc_gto.py=+4.820[+2.480 +8.230 +3.750]/err0 errors=0 time=81.2s
+gen 09 cand 05/20: score=+1.452 min_target=-0.758 champion=-0.758[-2.050 +1.835 -2.060]/err0 | bot_mc_gto.py=+3.663[+3.530 +6.300 +1.160]/err0 errors=0 time=81.8s
+gen 09 cand 06/20: score=+2.162 min_target=-0.937 champion=-0.937[-2.920 -0.340 +0.450]/err0 | bot_mc_gto.py=+5.260[+5.400 +6.000 +4.380]/err0 errors=0 time=82.5s
+gen 09 cand 08/20: score=+0.004 min_target=-1.658 champion=-1.658[-1.800 -1.535 -1.640]/err0 | bot_mc_gto.py=+1.667[+2.300 +3.600 -0.900]/err0 errors=0 time=83.1s
+gen 09 cand 12/20: score=+0.227 min_target=-0.077 champion=-0.077[+1.310 -0.270 -1.270]/err0 | bot_mc_gto.py=+0.530[-0.390 +1.600 +0.380]/err0 errors=0 time=67.9s
+gen 09 cand 09/20: score=+3.640 min_target=+1.177 champion=+1.177[+2.160 +2.600 -1.230]/err0 | bot_mc_gto.py=+6.103[+11.040 +5.880 +1.390]/err0 errors=0 time=71.7s
+gen 09 cand 10/20: score=+1.847 min_target=+0.613 champion=+0.613[+0.450 +1.230 +0.160]/err0 | bot_mc_gto.py=+3.080[+4.680 +4.700 -0.140]/err0 errors=0 time=70.8s
+gen 09 cand 15/20: score=-0.753 min_target=-0.863 champion=-0.643[-0.700 -0.160 -1.070]/err0 | bot_mc_gto.py=-0.863[-1.120 -0.830 -0.640]/err0 errors=0 time=68.6s
+gen 09 cand 14/20: score=+1.918 min_target=+1.187 champion=+1.187[+0.100 +1.510 +1.950]/err0 | bot_mc_gto.py=+2.650[+4.200 +3.880 -0.130]/err0 errors=0 time=69.3s
+gen 09 cand 13/20: score=+2.470 min_target=+0.033 champion=+0.033[-0.440 +3.080 -2.540]/err0 | bot_mc_gto.py=+4.907[+5.370 +8.050 +1.300]/err0 errors=0 time=71.8s
+gen 09 cand 11/20: score=+1.132 min_target=-0.837 champion=-0.837[-0.430 -2.330 +0.250]/err0 | bot_mc_gto.py=+3.100[+2.280 +5.100 +1.920]/err0 errors=0 time=73.3s
+gen 09 cand 16/20: score=+1.151 min_target=-0.407 champion=-0.407[-0.940 +0.090 -0.370]/err0 | bot_mc_gto.py=+2.708[+6.930 +0.910 +0.285]/err0 errors=0 time=74.6s
+gen 09 cand 18/20: score=+1.318 min_target=-0.773 champion=-0.773[+1.200 -0.465 -3.055]/err0 | bot_mc_gto.py=+3.410[+6.570 +3.980 -0.320]/err0 errors=0 time=68.0s
+gen 09 cand 19/20: score=+2.218 min_target=+0.143 champion=+0.143[-2.420 +0.170 +2.680]/err0 | bot_mc_gto.py=+4.292[+6.250 +3.960 +2.665]/err0 errors=0 time=69.7s
+gen 09 cand 17/20: score=+0.333 min_target=-1.938 champion=-1.938[-4.250 -1.150 -0.415]/err0 | bot_mc_gto.py=+2.603[+5.160 +2.560 +0.090]/err0 errors=0 time=71.9s
+gen 09 cand 20/20: score=+0.468 min_target=-1.788 champion=-1.788[-4.250 -1.070 -0.045]/err0 | bot_mc_gto.py=+2.723[+6.360 +1.500 +0.310]/err0 errors=0 time=73.2s
+
+Best candidate this generation:
+  score: +3.640
+  min target: +1.177
+  errors: 0
+  details: champion=+1.177[+2.160 +2.600 -1.230]/err0 | bot_mc_gto.py=+6.103[+11.040 +5.880 +1.390]/err0
+
+PROMOTING candidate to champion.
+
+Saved params to tuned_params.json
+
+New champion PARAMS:
+PARAMS = {
+    "base_call_margin": 0.022702,
+    "committed_margin_multiplier": 0.244025,
+    "fallback_call_price": 0.210654,
+    "flop_uncertainty_margin": 0.014765,
+    "fold_rate_half_discount": 0.070683,
+    "fold_rate_pot_discount": 0.036457,
+    "fold_rate_reference": 0.231427,
+    "half_raise_extra_edge": 0.047299,
+    "loose_raise_bonus": 0.043463,
+    "postflop_button_bonus": 0.021181,
+    "postflop_half_threshold": 0.495587,
+    "postflop_oop_penalty": 0.006782,
+    "postflop_pot_threshold": 0.498737,
+    "pot_raise_extra_margin": 0.019620,
+    "preflop_half_threshold": 0.408301,
+    "preflop_pot_threshold": 0.620390,
+    "preflop_uncertainty_margin": 0.005377,
+    "raise_count_margin": 0.012201,
+    "randomization": 0.003398,
+    "river_uncertainty_margin": 0.000841,
+    "short_stack_aggression_bonus": 0.020895,
+    "tight_raise_penalty": 0.198614,
+    "tight_raise_reference": 0.984453,
+    "turn_uncertainty_margin": 0.003200,
+}
+
+================================================================================
+GENERATION 10/10
+================================================================================
+gen 10 cand 01/20: score=+3.802 min_target=+1.690 champion=+1.690[+1.500 +1.990 +1.580]/err0 | bot_mc_gto.py=+5.913[+10.450 +3.480 +3.810]/err0 errors=0 time=76.0s
+gen 10 cand 04/20: score=+1.550 min_target=-0.077 champion=-0.077[+1.000 +0.240 -1.470]/err0 | bot_mc_gto.py=+3.177[+6.360 +3.000 +0.170]/err0 errors=0 time=76.5s
+gen 10 cand 08/20: score=+1.807 min_target=-1.367 champion=-1.367[-2.550 -0.970 -0.580]/err0 | bot_mc_gto.py=+4.980[+8.460 +5.840 +0.640]/err0 errors=0 time=78.4s
+gen 10 cand 07/20: score=+2.960 min_target=+0.260 champion=+0.260[-1.060 -0.170 +2.010]/err0 | bot_mc_gto.py=+5.660[+12.310 +2.980 +1.690]/err0 errors=0 time=78.5s
+gen 10 cand 03/20: score=+2.843 min_target=-0.017 champion=-0.017[-0.200 -0.240 +0.390]/err0 | bot_mc_gto.py=+5.703[+10.240 +3.730 +3.140]/err0 errors=0 time=79.2s
+gen 10 cand 05/20: score=+3.117 min_target=-0.212 champion=-0.212[+0.680 -0.430 -0.885]/err0 | bot_mc_gto.py=+6.447[+10.080 +5.680 +3.580]/err0 errors=0 time=80.0s
+gen 10 cand 02/20: score=+4.330 min_target=+1.120 champion=+1.120[+0.530 +0.770 +2.060]/err0 | bot_mc_gto.py=+7.540[+9.060 +9.410 +4.150]/err0 errors=0 time=80.4s
+gen 10 cand 06/20: score=+1.070 min_target=-1.413 champion=-1.413[-2.330 -0.420 -1.490]/err0 | bot_mc_gto.py=+3.553[+2.650 +4.310 +3.700]/err0 errors=0 time=81.5s
+gen 10 cand 10/20: score=+0.192 min_target=-0.623 champion=+1.007[+0.890 +1.550 +0.580]/err0 | bot_mc_gto.py=-0.623[+1.150 -1.400 -1.620]/err0 errors=0 time=72.1s
+gen 10 cand 09/20: score=+1.838 min_target=+0.022 champion=+0.022[-1.450 -0.240 +1.755]/err0 | bot_mc_gto.py=+3.655[+7.600 +3.630 -0.265]/err0 errors=0 time=76.4s
+gen 10 cand 12/20: score=+1.705 min_target=-1.013 champion=-1.013[-1.650 -1.220 -0.170]/err0 | bot_mc_gto.py=+4.423[+6.250 +6.740 +0.280]/err0 errors=0 time=76.6s
+gen 10 cand 14/20: score=+0.818 min_target=+0.320 champion=+0.320[+0.820 +1.190 -1.050]/err0 | bot_mc_gto.py=+1.317[+0.540 +0.820 +2.590]/err0 errors=0 time=76.8s
+gen 10 cand 15/20: score=+1.560 min_target=-0.313 champion=-0.313[-1.690 +0.510 +0.240]/err0 | bot_mc_gto.py=+3.433[+3.380 +3.890 +3.030]/err0 errors=0 time=79.2s
+gen 10 cand 11/20: score=+1.313 min_target=-1.783 champion=-1.783[-2.050 -2.120 -1.180]/err0 | bot_mc_gto.py=+4.410[+5.980 +1.890 +5.360]/err0 errors=0 time=81.4s
+gen 10 cand 16/20: score=+1.298 min_target=-0.693 champion=-0.693[-1.440 -0.600 -0.040]/err0 | bot_mc_gto.py=+3.290[+3.080 +4.850 +1.940]/err0 errors=0 time=78.8s
+gen 10 cand 13/20: score=+1.215 min_target=-0.510 champion=-0.510[-0.890 -2.150 +1.510]/err0 | bot_mc_gto.py=+2.940[+3.680 +4.480 +0.660]/err0 errors=0 time=81.8s
+gen 10 cand 17/20: score=+3.443 min_target=+1.093 champion=+1.093[+2.370 +0.170 +0.740]/err0 | bot_mc_gto.py=+5.793[+8.340 +8.390 +0.650]/err0 errors=0 time=67.7s
+gen 10 cand 18/20: score=-0.246 min_target=-0.395 champion=-0.097[+0.550 +0.200 -1.040]/err0 | bot_mc_gto.py=-0.395[-0.625 +1.110 -1.670]/err0 errors=0 time=68.1s
+gen 10 cand 19/20: score=+0.046 min_target=-1.522 champion=-1.522[-2.440 -0.970 -1.155]/err0 | bot_mc_gto.py=+1.613[+4.070 +0.780 -0.010]/err0 errors=0 time=67.5s
+gen 10 cand 20/20: score=+3.263 min_target=-0.907 champion=-0.907[-1.590 -0.070 -1.060]/err0 | bot_mc_gto.py=+7.433[+12.230 +6.500 +3.570]/err0 errors=0 time=70.3s
+
+Best candidate this generation:
+  score: +4.330
+  min target: +1.120
+  errors: 0
+  details: champion=+1.120[+0.530 +0.770 +2.060]/err0 | bot_mc_gto.py=+7.540[+9.060 +9.410 +4.150]/err0
+
+PROMOTING candidate to champion.
+
+Saved params to tuned_params.json
+
+New champion PARAMS:
+PARAMS = {
+    "base_call_margin": 0.022702,
+    "committed_margin_multiplier": 0.244025,
+    "fallback_call_price": 0.212298,
+    "flop_uncertainty_margin": 0.017450,
+    "fold_rate_half_discount": 0.070683,
+    "fold_rate_pot_discount": 0.029614,
+    "fold_rate_reference": 0.218906,
+    "half_raise_extra_edge": 0.049964,
+    "loose_raise_bonus": 0.040644,
+    "postflop_button_bonus": 0.020973,
+    "postflop_half_threshold": 0.590171,
+    "postflop_oop_penalty": 0.007343,
+    "postflop_pot_threshold": 0.473749,
+    "pot_raise_extra_margin": 0.022865,
+    "preflop_half_threshold": 0.408301,
+    "preflop_pot_threshold": 0.620390,
+    "preflop_uncertainty_margin": 0.005708,
+    "raise_count_margin": 0.012201,
+    "randomization": 0.003454,
+    "river_uncertainty_margin": 0.000986,
+    "short_stack_aggression_bonus": 0.022246,
+    "tight_raise_penalty": 0.190058,
+    "tight_raise_reference": 0.968533,
+    "turn_uncertainty_margin": 0.003200,
+}
+
+================================================================================
+TUNING COMPLETE
+================================================================================
+Elapsed: 2137.8s
+Best observed promoted score: +4.638
+
+Final champion PARAMS:
+PARAMS = {
+    "base_call_margin": 0.022702,
+    "committed_margin_multiplier": 0.244025,
+    "fallback_call_price": 0.212298,
+    "flop_uncertainty_margin": 0.017450,
+    "fold_rate_half_discount": 0.070683,
+    "fold_rate_pot_discount": 0.029614,
+    "fold_rate_reference": 0.218906,
+    "half_raise_extra_edge": 0.049964,
+    "loose_raise_bonus": 0.040644,
+    "postflop_button_bonus": 0.020973,
+    "postflop_half_threshold": 0.590171,
+    "postflop_oop_penalty": 0.007343,
+    "postflop_pot_threshold": 0.473749,
+    "pot_raise_extra_margin": 0.022865,
+    "preflop_half_threshold": 0.408301,
+    "preflop_pot_threshold": 0.620390,
+    "preflop_uncertainty_margin": 0.005708,
+    "raise_count_margin": 0.012201,
+    "randomization": 0.003454,
+    "river_uncertainty_margin": 0.000986,
+    "short_stack_aggression_bonus": 0.022246,
+    "tight_raise_penalty": 0.190058,
+    "tight_raise_reference": 0.968533,
+    "turn_uncertainty_margin": 0.003200,
+}
+
+Saved params to tuned_params.json

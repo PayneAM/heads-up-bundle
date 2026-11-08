@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "candidates": 16,
+    "deals": 100,
+    "elapsed_seconds": 2137.8110250669997,
+    "final": true,
+    "generations": 10,
+    "jobs": 8,
+    "mode": "mixed",
+    "opponents": [
+      "/home/icarus/Documents/datathon/heads-up-bundle/bots/bot_mc_gto.py"
+    ],
+    "seeds": [
+      "1000",
+      "1001",
+      "1002"
+    ]
+  },
+  "params": {
+    "base_call_margin": 0.02270156210351588,
+    "committed_margin_multiplier": 0.2440253069357071,
+    "fallback_call_price": 0.2122980532415271,
+    "flop_uncertainty_margin": 0.01744993003822473,
+    "fold_rate_half_discount": 0.07068301163842239,
+    "fold_rate_pot_discount": 0.02961356698070367,
+    "fold_rate_reference": 0.21890617586380268,
+    "half_raise_extra_edge": 0.04996424495793095,
+    "loose_raise_bonus": 0.0406442555984223,
+    "postflop_button_bonus": 0.020972863501891526,
+    "postflop_half_threshold": 0.5901707912394349,
+    "postflop_oop_penalty": 0.007343310193591451,
+    "postflop_pot_threshold": 0.47374874819669993,
+    "pot_raise_extra_margin": 0.02286518886617714,
+    "preflop_half_threshold": 0.4083007848495755,
+    "preflop_pot_threshold": 0.6203897702568292,
+    "preflop_uncertainty_margin": 0.005707642509210808,
+    "raise_count_margin": 0.012200732152020183,
+    "randomization": 0.003453708068845378,
+    "river_uncertainty_margin": 0.000985559753665914,
+    "short_stack_aggression_bonus": 0.022246280660350806,
+    "tight_raise_penalty": 0.19005785088404065,
+    "tight_raise_reference": 0.9685332631178623,
+    "turn_uncertainty_margin": 0.0031995999606983633
+  }
+}

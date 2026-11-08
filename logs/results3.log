@@ -1,0 +1,23 @@
+waiting for agent1 at http://localhost:5008 ...
+waiting for agent2 at http://localhost:5009 ...
+agent1 = ChrisC / GTOExploit-v2 (http://localhost:5008)
+agent2 = Fish Dragon / bot_base_optim (http://localhost:5009)
+
+Duplicate match: 1000 deals (2000 hands), seed 7
+agent1: -3.467 bb/deal  (std 20.95, stderr 0.663)
+Confidence interval (z=1.96): [-4.766, -2.168] bb/deal
+Reason: interval [-4.766, -2.168] is entirely below 0
+half1: agent1 -812 chips, agent2 +812 chips
+half2: agent1 -6122 chips, agent2 +6122 chips
+Faults:
+  agent1 half1: thinking 5.47s of 8s (wall 7.93s), calls 2460, errors 0
+  agent1 half2: thinking 5.77s of 8s (wall 8.42s), calls 2651, errors 0
+  agent2 half1: thinking 7.27s of 8s (wall 10.42s), calls 3145, errors 0
+  agent2 half2: thinking 7.14s of 8s (wall 10.44s), calls 3304, errors 0
+Speed: 2000 hands in 39.10s (51 hands/s)
+
+============================================================
+  VERDICT: AGENT2 WINS  (Fish Dragon / bot_base_optim (http://localhost:5009))
+  Points: agent1 0, agent2 1
+============================================================
+RESULT: AGENT2_WIN
